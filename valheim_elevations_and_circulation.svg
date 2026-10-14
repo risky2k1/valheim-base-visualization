@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2400 1750" width="2400" height="1750"
+     style="background-color:#0f141c; font-family:'Inter', 'Segoe UI', 'DejaVu Sans', sans-serif;">
+  <defs>
+    <marker id="arrY" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M 0 1 L 8 4.5 L 0 8 z" fill="#ecc94b"/>
+    </marker>
+    <marker id="arrYStart" markerWidth="9" markerHeight="9" refX="2" refY="4.5" orient="auto">
+      <path d="M 8 1 L 0 4.5 L 8 8 z" fill="#ecc94b"/>
+    </marker>
+    <marker id="flowArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 1 L 7 4 L 0 7 z" fill="#f6ad55"/>
+    </marker>
+    <pattern id="earthHatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="16" height="16" fill="#1e2820"/>
+      <line x1="0" y1="0" x2="0" y2="16" stroke="#2f4232" stroke-width="4"/>
+    </pattern>
+  </defs>
+
+  <!-- Title Header -->
+  <rect x="25" y="20" width="2350" height="95" rx="6" fill="#161f2c" stroke="#4a5568" stroke-width="2"/>
+  <text x="50" y="58" fill="#f7fafc" font-size="26" font-weight="800">VALHEIM COASTAL MEGA-BASE — VERTICAL SECTIONS, ELEVATION TRANSITIONS &amp; CIRCULATION DIAGRAMS</text>
+  <text x="50" y="88" fill="#90cdf4" font-size="14" font-weight="600">Deliverable 3  |  Verifying the Fixed +4.0 m Dreamhouse Floor, +2.0 m Outdoor Plaza (36×36 m), 0.0 m Ground Datum, and -1.5 m / -4.5 m Harbor Section</text>
+  <text x="2345" y="58" fill="#ecc94b" font-size="14" font-weight="700" text-anchor="end">DRAWING NO: VMB-SEC-02</text>
+  <text x="2345" y="84" fill="#cbd5e0" font-size="12" text-anchor="end">All Units in Meters (4.0 m Grausten Grid Aligned)</text>
+
+
+  <g id="section-longitudinal">
+    <rect x="25" y="135" width="2350" height="660" rx="6" fill="#141c27" stroke="#4a5568" stroke-width="2"/>
+    <text x="50" y="170" fill="#ecc94b" font-size="18" font-weight="800">1. LONGITUDINAL VERTICAL SECTION A–A (SOUTH–NORTH AXIS ALONG X = +12.0 m, LOOKING WEST)</text>
+    <text x="50" y="193" fill="#cbd5e0" font-size="12.5">Cuts through Breakwater Beacon (Y=-70m) → Harbor Basin (Z=-4.5m) → Main Quay (Z=0.0m) → King's Way Avenue → +2.0m Plaza (Y=-8..+28m) → +4.0m Dreamhouse (Y=0..+24m) → North Gatehouse (Y=+68m)</text>
+
+    <line x1="130" y1="318.0" x2="2305" y2="318.0" stroke="#f687b3" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.35"/>
+    <text x="125" y="322.0" fill="#f687b3" font-size="10.5" font-weight="700" text-anchor="end">+28.0m</text>
+    <line x1="130" y1="502.0" x2="2305" y2="502.0" stroke="#cbd5e0" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.3"/>
+    <text x="125" y="506.0" fill="#cbd5e0" font-size="10.5" font-weight="700" text-anchor="end">+12.0m</text>
+    <line x1="130" y1="594.0" x2="2305" y2="594.0" stroke="#f687b3" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.8"/>
+    <text x="125" y="598.0" fill="#f687b3" font-size="10.5" font-weight="700" text-anchor="end">+4.0m</text>
+    <line x1="130" y1="617.0" x2="2305" y2="617.0" stroke="#ecc94b" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.8"/>
+    <text x="125" y="621.0" fill="#ecc94b" font-size="10.5" font-weight="700" text-anchor="end">+2.0m</text>
+    <line x1="130" y1="640.0" x2="2305" y2="640.0" stroke="#63b3ed" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.9"/>
+    <text x="125" y="644.0" fill="#63b3ed" font-size="10.5" font-weight="700" text-anchor="end">+0.0m</text>
+    <line x1="130" y1="657.25" x2="2305" y2="657.25" stroke="#4299e1" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.65"/>
+    <text x="125" y="661.25" fill="#4299e1" font-size="10.5" font-weight="700" text-anchor="end">-1.5m</text>
+    <line x1="130" y1="691.75" x2="2305" y2="691.75" stroke="#2b6cb0" stroke-width="1.3" stroke-dasharray="6,4" stroke-opacity="0.5"/>
+    <text x="125" y="695.75" fill="#2b6cb0" font-size="10.5" font-weight="700" text-anchor="end">-4.5m</text>
+    <line x1="200.12820512820514" y1="709.0" x2="200.12820512820514" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="200.12820512820514" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=-72m</text>
+    <line x1="365.51282051282055" y1="709.0" x2="365.51282051282055" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="365.51282051282055" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=-60m</text>
+    <line x1="530.8974358974359" y1="709.0" x2="530.8974358974359" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="530.8974358974359" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=-48m</text>
+    <line x1="696.2820512820513" y1="709.0" x2="696.2820512820513" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="696.2820512820513" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=-36m</text>
+    <line x1="861.6666666666667" y1="709.0" x2="861.6666666666667" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="861.6666666666667" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=-24m</text>
+    <line x1="1027.0512820512822" y1="709.0" x2="1027.0512820512822" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="1027.0512820512822" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=-12m</text>
+    <line x1="1192.4358974358975" y1="709.0" x2="1192.4358974358975" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="1192.4358974358975" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+0m</text>
+    <line x1="1357.820512820513" y1="709.0" x2="1357.820512820513" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="1357.820512820513" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+12m</text>
+    <line x1="1523.2051282051282" y1="709.0" x2="1523.2051282051282" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="1523.2051282051282" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+24m</text>
+    <line x1="1688.5897435897436" y1="709.0" x2="1688.5897435897436" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="1688.5897435897436" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+36m</text>
+    <line x1="1853.9743589743591" y1="709.0" x2="1853.9743589743591" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="1853.9743589743591" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+48m</text>
+    <line x1="2019.3589743589744" y1="709.0" x2="2019.3589743589744" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="2019.3589743589744" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+60m</text>
+    <line x1="2184.74358974359" y1="709.0" x2="2184.74358974359" y2="756" stroke="#4a5568" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="2184.74358974359" y="770" fill="#a0aec0" font-size="10.5" font-weight="600" text-anchor="middle">Y=+72m</text>
+    <rect x="145.0" y="657.25" width="441.0256410256411" height="34.5" fill="#1a365d" fill-opacity="0.75"/>
+    <path d="M 145.0 691.75 L 586.0256410256411 691.75 L 586.0256410256411 640.0 L 2184.74358974359 640.0 L 2184.74358974359 668.75 L 2239.871794871795 668.75 L 2239.871794871795 640.0 L 2295.0 640.0 L 2295.0 709.0 L 145.0 709.0 Z" fill="url(#earthHatch)" stroke="#48bb78" stroke-width="1.5"/>
+    <rect x="200.12820512820514" y="628.5" width="55.12820512820514" height="63.25" fill="#4a5568" stroke="#cbd5e0" stroke-width="1.5"/>
+    <rect x="207.01923076923077" y="502.0" width="41.34615384615387" height="126.5" fill="#744210" stroke="#f6e05e" stroke-width="1.8"/>
+    <circle cx="227.69230769230768" cy="490.5" r="6" fill="#f6ad55"/>
+    <polygon points="365.51282051282055,630.8 475.7692307692308,630.8 455.09615384615387,674.5 386.18589743589746,674.5" fill="#744210" stroke="#f6ad55" stroke-width="2"/>
+    <line x1="420.64102564102564" y1="630.8" x2="420.64102564102564" y2="530.75" stroke="#fbd38d" stroke-width="2.5"/>
+    <text x="420.64102564102564" y="699.8" fill="#90cdf4" font-size="10" font-weight="700" text-anchor="middle">Harbor Basin (Z=-4.5m)</text>
+    <rect x="530.8974358974359" y="640.0" width="55.128205128205195" height="51.75" fill="#4a5568" stroke="#ecc94b" stroke-width="2"/>
+    <text x="558.4615384615386" y="614.7" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Quay (0.0m)</text>
+    <line x1="586.0256410256411" y1="640.0" x2="1027.0512820512822" y2="640.0" stroke="#90cdf4" stroke-width="4"/>
+    <polygon points="868.5576923076924,640.0 909.9038461538462,640.0 896.1217948717949,553.75 882.3397435897436,553.75" fill="#744210" stroke="#f6e05e" stroke-width="1.5"/>
+    <text x="778.974358974359" y="614.7" fill="#bee3f8" font-size="10" font-weight="700" text-anchor="middle">Seaward Avenue (Z = 0.0m)</text>
+    <polygon points="1027.0512820512822,640.0 1082.1794871794873,640.0 1082.1794871794873,617.0" fill="#ecc94b" stroke="#fefcbf" stroke-width="1.5"/>
+    <rect x="1082.1794871794873" y="617.0" width="496.1538461538462" height="23.0" fill="#2b3340" stroke="#ecc94b" stroke-width="2.5"/>
+    <polygon points="1578.3333333333335,640.0 1633.4615384615386,640.0 1578.3333333333335,617.0" fill="#ecc94b" stroke="#fefcbf" stroke-width="1.5"/>
+    <polygon points="1137.3076923076924,617.0 1192.4358974358975,617.0 1192.4358974358975,594.0" fill="#f687b3" stroke="#fed7e2" stroke-width="1.5"/>
+    <rect x="1192.4358974358975" y="594.0" width="330.7692307692307" height="46.0" fill="#2d121e" stroke="#f687b3" stroke-width="2.5"/>
+    <line x1="1220.0" y1="640.0" x2="1220.0" y2="456.0" stroke="#63b3ed" stroke-width="3"/>
+    <line x1="1302.6923076923078" y1="640.0" x2="1302.6923076923078" y2="456.0" stroke="#63b3ed" stroke-width="3"/>
+    <line x1="1412.948717948718" y1="640.0" x2="1412.948717948718" y2="456.0" stroke="#63b3ed" stroke-width="3"/>
+    <line x1="1495.6410256410256" y1="640.0" x2="1495.6410256410256" y2="456.0" stroke="#63b3ed" stroke-width="3"/>
+    <text x="1357.820512820513" y="613.55" fill="#fed7e2" font-size="9.5" font-weight="700" text-anchor="middle">BASEMENT (Z = 0.0m to +4.0m)</text>
+    <text x="1357.820512820513" y="630.8" fill="#cbd5e0" font-size="8.5" text-anchor="middle">Workstation Upgrades &amp; Grounded Columns</text>
+    <rect x="1192.4358974358975" y="502.0" width="330.7692307692307" height="92.0" fill="#4a192c" fill-opacity="0.85" stroke="#f687b3" stroke-width="2.5"/>
+    <polygon points="1178.6538461538462,507.75 1247.5641025641025,467.5 1357.820512820513,318.0 1468.076923076923,467.5 1536.9871794871797,507.75" fill="#3b1d2e" stroke="#fbb6ce" stroke-width="2.5"/>
+    <rect x="1523.2051282051282" y="410.0" width="27.564102564102768" height="207.0" fill="#742a2a" stroke="#feb2b2" stroke-width="2"/>
+    <text x="1357.820512820513" y="545.7" fill="#fff5f5" font-size="12" font-weight="800" text-anchor="middle">EXISTING DREAMHOUSE (24m × 24m)</text>
+    <text x="1357.820512820513" y="568.7" fill="#fbb6ce" font-size="10" font-weight="700" text-anchor="middle">Main Floor Z = +4.0 m  |  60 Chests &amp; 4 Stations</text>
+    <text x="1357.820512820513" y="465.20000000000005" fill="#fed7e2" font-size="9.5" font-weight="700" text-anchor="middle">Cathedral Roof (+24m Peak)</text>
+    <line x1="1633.4615384615386" y1="640.0" x2="2074.4871794871797" y2="640.0" stroke="#90cdf4" stroke-width="4"/>
+    <text x="1853.9743589743591" y="614.7" fill="#bee3f8" font-size="10" font-weight="700" text-anchor="middle">North Avenue (Z = 0.0m)</text>
+    <rect x="2074.4871794871797" y="502.0" width="110.25641025641016" height="138.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.2"/>
+    <text x="2129.6153846153848" y="479.0" fill="#fbd38d" font-size="10" font-weight="700" text-anchor="middle">North Gate (+12m)</text>
+    <text x="2226.0897435897436" y="683.7" fill="#68d391" font-size="9.5" font-weight="700" text-anchor="middle">Moat (-2.5m)</text>
+    <rect x="641.1538461538462" y="220" width="440" height="115" rx="6" fill="#1e293b" stroke="#ecc94b" stroke-width="1.8"/>
+    <text x="668.7179487179487" y="245" fill="#ecc94b" font-size="13" font-weight="800">THREE-LEVEL SEAWARD APPROACH SEQUENCE:</text>
+    <text x="668.7179487179487" y="267" fill="#e2e8f0" font-size="11.5">1. Ground &amp; Harbor Quay (Z = 0.0m): Y = -48m to -12m</text>
+    <text x="668.7179487179487" y="287" fill="#fefcbf" font-size="11.5">2. South Plaza Grand Stair (Y = -12..-8m) → Plaza Deck (Z = +2.0m)</text>
+    <text x="668.7179487179487" y="307" fill="#fed7e2" font-size="11.5">3. House Portal Stair (Y = -4..0m) → Dreamhouse Floor (Z = +4.0m)</text>
+  </g>
+
+  <g id="section-transverse">
+    <rect x="25" y="820" width="1180" height="900" rx="6" fill="#141c27" stroke="#4a5568" stroke-width="2"/>
+    <text x="50" y="856" fill="#ecc94b" font-size="17" font-weight="800">2. TRANSVERSE SECTION B–B (WEST–EAST AT Y = +12.0 m, LOOKING NORTH)</text>
+    <text x="50" y="878" fill="#cbd5e0" font-size="12">Shows Level +4.0m Skybridge to Resting Extension, +2.0m Plaza Flanking Terraces, and 0.0m Agriculture Compound</text>
+
+    <line x1="100" y1="1064.0" x2="1160" y2="1064.0" stroke="#d6bcfa" stroke-width="1.2" stroke-dasharray="5,4" stroke-opacity="0.7"/>
+    <text x="96" y="1068.0" fill="#d6bcfa" font-size="10" font-weight="700" text-anchor="end">+16.0m</text>
+    <line x1="100" y1="1196.0" x2="1160" y2="1196.0" stroke="#f687b3" stroke-width="1.2" stroke-dasharray="5,4" stroke-opacity="0.7"/>
+    <text x="96" y="1200.0" fill="#f687b3" font-size="10" font-weight="700" text-anchor="end">+4.0m</text>
+    <line x1="100" y1="1218.0" x2="1160" y2="1218.0" stroke="#ecc94b" stroke-width="1.2" stroke-dasharray="5,4" stroke-opacity="0.7"/>
+    <text x="96" y="1222.0" fill="#ecc94b" font-size="10" font-weight="700" text-anchor="end">+2.0m</text>
+    <line x1="100" y1="1240.0" x2="1160" y2="1240.0" stroke="#63b3ed" stroke-width="1.2" stroke-dasharray="5,4" stroke-opacity="0.7"/>
+    <text x="96" y="1244.0" fill="#63b3ed" font-size="10" font-weight="700" text-anchor="end">+0.0m</text>
+    <line x1="100" y1="1267.5" x2="1160" y2="1267.5" stroke="#48bb78" stroke-width="1.2" stroke-dasharray="5,4" stroke-opacity="0.7"/>
+    <text x="96" y="1271.5" fill="#48bb78" font-size="10" font-weight="700" text-anchor="end">-2.5m</text>
+    <path d="M 110.0 1267.5 L 140.88235294117646 1267.5 L 140.88235294117646 1240.0 L 1129.1176470588234 1240.0 L 1129.1176470588234 1267.5 L 1160.0 1267.5 L 1160.0 1295.0 L 110.0 1295.0 Z" fill="url(#earthHatch)" stroke="#48bb78" stroke-width="1.5"/>
+    <rect x="140.88235294117646" y="1207.0" width="15.441176470588232" height="33.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="1113.6764705882354" y="1207.0" width="15.441176470588061" height="33.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="295.29411764705884" y="1218.0" width="432.35294117647055" height="22.0" fill="#2b3340" stroke="#ecc94b" stroke-width="2"/>
+    <polygon points="264.4117647058823,1240.0 295.29411764705884,1240.0 295.29411764705884,1218.0" fill="#ecc94b"/>
+    <polygon points="727.6470588235294,1240.0 758.5294117647059,1240.0 727.6470588235294,1218.0" fill="#ecc94b"/>
+    <rect x="326.1764705882353" y="1196.0" width="123.52941176470586" height="22.0" fill="#322659" stroke="#d6bcfa" stroke-width="2"/>
+    <rect x="326.1764705882353" y="1141.0" width="123.52941176470586" height="55.0" fill="#44337a" stroke="#d6bcfa" stroke-width="2"/>
+    <polygon points="318.4558823529412,1143.2 387.94117647058823,1064.0 457.4264705882353,1143.2" fill="#322659" stroke="#d6bcfa" stroke-width="2"/>
+    <text x="387.94117647058823" y="1171.8" fill="#faf5ff" font-size="9.5" font-weight="700" text-anchor="middle">Resting Hall (+4m)</text>
+    <rect x="449.70588235294116" y="1152.0" width="30.88235294117652" height="44.0" fill="#553c9a" stroke="#d6bcfa" stroke-width="2"/>
+    <rect x="480.5882352941177" y="1196.0" width="185.29411764705878" height="44.0" fill="#2d121e" stroke="#f687b3" stroke-width="2"/>
+    <rect x="480.5882352941177" y="1108.0" width="185.29411764705878" height="88.0" fill="#4a192c" stroke="#f687b3" stroke-width="2.5"/>
+    <polygon points="472.86764705882354,1113.5 511.47058823529414,1075.0 573.2352941176471,932.0 635.0,1075.0 673.6029411764706,1113.5" fill="#3b1d2e" stroke="#fbb6ce" stroke-width="2.5"/>
+    <text x="573.2352941176471" y="1149.8" fill="#fed7e2" font-size="10" font-weight="800" text-anchor="middle">Dreamhouse (24m)</text>
+    <text x="573.2352941176471" y="1171.8" fill="#fbb6ce" font-size="9" font-weight="700" text-anchor="middle">Floor Z = +4.0m</text>
+    <polygon points="665.8823529411765,1218.0 696.7647058823529,1218.0 665.8823529411765,1196.0" fill="#f687b3"/>
+    <rect x="820.2941176470588" y="1240.0" width="92.6470588235295" height="6" fill="#68d391"/>
+    <rect x="943.8235294117648" y="1240.0" width="92.64705882352939" height="6" fill="#68d391"/>
+    <rect x="1055.7720588235293" y="1174.0" width="11.580882352941444" height="66.0" fill="#22543d" stroke="#68d391" stroke-width="1.8"/>
+    <text x="928.3823529411765" y="1207.0" fill="#9ae6b4" font-size="10.5" font-weight="700" text-anchor="middle">Zone B: Open-Sky Crop Plots (Z = 0.0m) + East Vineberry Wall</text>
+    <text x="140.88235294117646" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=-44m</text>
+    <text x="233.52941176470588" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=-32m</text>
+    <text x="326.1764705882353" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=-20m</text>
+    <text x="418.8235294117647" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=-8m</text>
+    <text x="511.47058823529414" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+4m</text>
+    <text x="604.1176470588235" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+16m</text>
+    <text x="696.7647058823529" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+28m</text>
+    <text x="789.4117647058823" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+40m</text>
+    <text x="882.0588235294118" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+52m</text>
+    <text x="974.7058823529412" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+64m</text>
+    <text x="1067.3529411764707" y="1315" fill="#a0aec0" font-size="10" font-weight="600" text-anchor="middle">X=+76m</text>
+
+    <text x="50" y="1355" fill="#ecc94b" font-size="16" font-weight="800">3. SCHEDULE OF STAIRS, RAMPS, BRIDGES &amp; RETAINING WALLS</text>
+    <rect x="50" y="1369" width="1130" height="315" rx="6" fill="#1e293b" stroke="#4a5568" stroke-width="1.2"/>
+
+    <text x="65" y="1397" fill="#f7fafc" font-size="11.5" font-weight="700">T1. South House Portal Stair</text>
+    <text x="300" y="1397" fill="#90cdf4" font-size="11" font-family="monospace">X: 10..14m, Y: -4..0m</text>
+    <text x="500" y="1397" fill="#fefcbf" font-size="11" font-weight="700">Z: +4.0m ↔ +2.0m</text>
+    <text x="670" y="1397" fill="#cbd5e0" font-size="11">4m wide × 4m run</text>
+    <text x="820" y="1397" fill="#a0aec0" font-size="11">2× Grausten / Black Marble Stairs + Flametal Arches</text>
+    <rect x="57" y="1409" width="1116" height="25" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="65" y="1425" fill="#f7fafc" font-size="11.5" font-weight="700">T2. East House Portal Stair</text>
+    <text x="300" y="1425" fill="#90cdf4" font-size="11" font-family="monospace">X: 24..28m, Y: 10..14m</text>
+    <text x="500" y="1425" fill="#fefcbf" font-size="11" font-weight="700">Z: +4.0m ↔ +2.0m</text>
+    <text x="670" y="1425" fill="#cbd5e0" font-size="11">4m wide × 4m run</text>
+    <text x="820" y="1425" fill="#a0aec0" font-size="11">Direct step from East Crafting Doors to East Plaza</text>
+    <text x="65" y="1453" fill="#f7fafc" font-size="11.5" font-weight="700">T3. West Covered Skybridge</text>
+    <text x="300" y="1453" fill="#90cdf4" font-size="11" font-family="monospace">X: -4..0m, Y: 8..16m</text>
+    <text x="500" y="1453" fill="#fefcbf" font-size="11" font-weight="700">Z: +4.0m ↔ +4.0m</text>
+    <text x="670" y="1453" fill="#cbd5e0" font-size="11">4m span × 8m wide</text>
+    <text x="820" y="1453" fill="#a0aec0" font-size="11">Level indoor corridor to Resting Hall (+2m walk under)</text>
+    <rect x="57" y="1465" width="1116" height="25" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="65" y="1481" fill="#f7fafc" font-size="11.5" font-weight="700">T4. Basement Hatch & N. Door</text>
+    <text x="300" y="1481" fill="#90cdf4" font-size="11" font-family="monospace">X: 15..17m / Y: 24m</text>
+    <text x="500" y="1481" fill="#fefcbf" font-size="11" font-weight="700">Z: +4.0m/+2.0m ↔ 0.0m</text>
+    <text x="670" y="1481" fill="#cbd5e0" font-size="11">2m hatch / 4m door</text>
+    <text x="820" y="1481" fill="#a0aec0" font-size="11">Internal rug drop-hole + North Plaza maintenance door</text>
+    <text x="65" y="1509" fill="#f7fafc" font-size="11.5" font-weight="700">T5. South Plaza Grand Stair</text>
+    <text x="300" y="1509" fill="#90cdf4" font-size="11" font-family="monospace">X: 8..16m, Y: -12..-8m</text>
+    <text x="500" y="1509" fill="#fefcbf" font-size="11" font-weight="700">Z: +2.0m ↔ 0.0m</text>
+    <text x="670" y="1509" fill="#cbd5e0" font-size="11">8m wide × 4m run</text>
+    <text x="820" y="1509" fill="#a0aec0" font-size="11">Monumental ceremonial stair onto King's Way Avenue</text>
+    <rect x="57" y="1521" width="1116" height="25" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="65" y="1537" fill="#f7fafc" font-size="11.5" font-weight="700">T6. East Plaza Logistics Stair</text>
+    <text x="300" y="1537" fill="#90cdf4" font-size="11" font-family="monospace">X: 32..36m, Y: 8..16m</text>
+    <text x="500" y="1537" fill="#fefcbf" font-size="11" font-weight="700">Z: +2.0m ↔ 0.0m</text>
+    <text x="670" y="1537" fill="#cbd5e0" font-size="11">8m wide × 4m run</text>
+    <text x="820" y="1537" fill="#a0aec0" font-size="11">Connects East Plaza to East Ring Road & Agriculture</text>
+    <text x="65" y="1565" fill="#f7fafc" font-size="11.5" font-weight="700">T7. North Plaza Garden Stair</text>
+    <text x="300" y="1565" fill="#90cdf4" font-size="11" font-family="monospace">X: 8..16m, Y: 28..32m</text>
+    <text x="500" y="1565" fill="#fefcbf" font-size="11" font-weight="700">Z: +2.0m ↔ 0.0m</text>
+    <text x="670" y="1565" fill="#cbd5e0" font-size="11">8m wide × 4m run</text>
+    <text x="820" y="1565" fill="#a0aec0" font-size="11">Connects Rear Plaza Gallery to North Gatehouse Spine</text>
+    <rect x="57" y="1577" width="1116" height="25" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="65" y="1593" fill="#f7fafc" font-size="11.5" font-weight="700">T8. West Spa Terrace Stair</text>
+    <text x="300" y="1593" fill="#90cdf4" font-size="11" font-family="monospace">X: -28..-24m, Y: 8..16m</text>
+    <text x="500" y="1593" fill="#fefcbf" font-size="11" font-weight="700">Z: +2.0m ↔ 0.0m</text>
+    <text x="670" y="1593" fill="#cbd5e0" font-size="11">4m wide × 4m run</text>
+    <text x="820" y="1593" fill="#a0aec0" font-size="11">Connects West Hot Tub Court to West Ring & Portals</text>
+    <text x="65" y="1621" fill="#f7fafc" font-size="11.5" font-weight="700">T9. Quay Stepped Gangway</text>
+    <text x="300" y="1621" fill="#90cdf4" font-size="11" font-family="monospace">X: 8..16m, Y: -48..-46m</text>
+    <text x="500" y="1621" fill="#fefcbf" font-size="11" font-weight="700">Z: 0.0m ↔ -0.5m/-1.5m</text>
+    <text x="670" y="1621" fill="#cbd5e0" font-size="11">8m wide × 2m step</text>
+    <text x="820" y="1621" fill="#a0aec0" font-size="11">Recessed boarding stage for Karve, Longship & Drakkar</text>
+    <rect x="57" y="1633" width="1116" height="25" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="65" y="1649" fill="#f7fafc" font-size="11.5" font-weight="700">T10. Lox Paddock Earth Ramp</text>
+    <text x="300" y="1649" fill="#90cdf4" font-size="11" font-family="monospace">X: 64..68m, Y: 48..52m</text>
+    <text x="500" y="1649" fill="#fefcbf" font-size="11" font-weight="700">Z: -2.0m ↔ 0.0m</text>
+    <text x="670" y="1649" fill="#cbd5e0" font-size="11">4m wide × 4m ramp</text>
+    <text x="820" y="1649" fill="#a0aec0" font-size="11">Gated earthen/stone ramp for riding Lox/Asksvin out</text>
+  </g>
+
+  <g id="diagram-circulation">
+    <rect x="1230" y="820" width="1145" height="900" rx="6" fill="#141c27" stroke="#4a5568" stroke-width="2"/>
+    <text x="1255" y="856" fill="#ecc94b" font-size="17" font-weight="800">4. ANNOTATED CIRCULATION, TRAVEL TIMES &amp; 20m SPAWN-SUPPRESSION GRID</text>
+    <text x="1255" y="878" fill="#cbd5e0" font-size="12">Schematic Node-Link Workflow (Distances from Dreamhouse Storage Core) + 20m Workbench/Campfire Base Coverage</text>
+
+    <rect x="1255" y="900" width="600" height="790" rx="6" fill="#0f141c" stroke="#4a5568" stroke-width="1.5"/>
+    <circle cx="1324.0" cy="1461.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1324.0" cy="1461.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1324.0" cy="1353.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1324.0" cy="1353.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1324.0" cy="1245.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1324.0" cy="1245.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1324.0" cy="1137.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1324.0" cy="1137.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1324.0" cy="1029.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1324.0" cy="1029.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1432.0" cy="1461.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1432.0" cy="1461.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1432.0" cy="1353.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1432.0" cy="1353.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1432.0" cy="1245.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1432.0" cy="1245.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1432.0" cy="1137.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1432.0" cy="1137.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1432.0" cy="1029.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1432.0" cy="1029.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1540.0" cy="1461.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1540.0" cy="1461.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1540.0" cy="1353.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1540.0" cy="1353.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1540.0" cy="1245.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1540.0" cy="1245.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1540.0" cy="1137.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1540.0" cy="1137.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1540.0" cy="1029.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1540.0" cy="1029.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1648.0" cy="1461.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1648.0" cy="1461.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1648.0" cy="1353.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1648.0" cy="1353.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1648.0" cy="1245.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1648.0" cy="1245.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1648.0" cy="1137.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1648.0" cy="1137.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1648.0" cy="1029.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1648.0" cy="1029.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1756.0" cy="1461.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1756.0" cy="1461.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1756.0" cy="1353.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1756.0" cy="1353.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1756.0" cy="1245.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1756.0" cy="1245.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1756.0" cy="1137.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1756.0" cy="1137.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1756.0" cy="1029.0" r="90.0" fill="#48bb78" fill-opacity="0.05" stroke="#48bb78" stroke-width="0.9" stroke-dasharray="4,4" stroke-opacity="0.45"/>
+    <circle cx="1756.0" cy="1029.0" r="2.5" fill="#68d391" opacity="0.7"/>
+    <circle cx="1522.0" cy="1245.0" r="288.0" fill="none" stroke="#f6ad55" stroke-width="1.8" stroke-dasharray="8,5"/>
+    <rect x="1275" y="1650" width="560" height="26" rx="4" fill="#1e293b" stroke="#f6ad55" stroke-width="1.2"/>
+    <text x="1555" y="1667" fill="#fbd38d" font-size="10.5" font-weight="700" text-anchor="middle">Dashed Orange Circle = 64m Active Animal Breeding Radius from Dreamhouse Center</text>
+    <rect x="1270.0" y="975.0" width="576.0" height="522.0" fill="none" fill-opacity="0.75" stroke="#718096" stroke-width="1.8"/>
+    <rect x="1450.0" y="1173.0" width="162.0" height="162.0" fill="#2b3340" fill-opacity="0.75" stroke="#ecc94b" stroke-width="1.8"/>
+    <text x="1531.0" y="1250.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">Plaza (+2m)</text>
+    <rect x="1468.0" y="1191.0" width="108.0" height="108.0" fill="#4a192c" fill-opacity="0.75" stroke="#f687b3" stroke-width="1.8"/>
+    <text x="1522.0" y="1241.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">DREAMHOUSE</text>
+    <text x="1522.0" y="1253.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">(+4.0m Anchor)</text>
+    <rect x="1378.0" y="1191.0" width="72.0" height="72.0" fill="#44337a" fill-opacity="0.75" stroke="#d6bcfa" stroke-width="1.8"/>
+    <text x="1414.0" y="1223.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">Resting</text>
+    <text x="1414.0" y="1235.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">(+4m)</text>
+    <rect x="1342.0" y="1083.0" width="90.0" height="45.0" fill="#1d4044" fill-opacity="0.75" stroke="#81e6d9" stroke-width="1.8"/>
+    <text x="1387.0" y="1101.9" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">Portals (0m)</text>
+    <rect x="1648.0" y="1227.0" width="162.0" height="216.0" fill="#273822" fill-opacity="0.75" stroke="#68d391" stroke-width="1.8"/>
+    <text x="1729.0" y="1331.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">Agriculture</text>
+    <text x="1729.0" y="1343.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">(0.0m)</text>
+    <rect x="1648.0" y="1047.0" width="162.0" height="144.0" fill="#3b2f1e" fill-opacity="0.75" stroke="#f6ad55" stroke-width="1.8"/>
+    <text x="1729.0" y="1115.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">Husbandry</text>
+    <text x="1729.0" y="1127.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">(0.0m / -2m)</text>
+    <rect x="1432.0" y="1497.0" width="162.0" height="108.0" fill="#0c2538" fill-opacity="0.75" stroke="#63b3ed" stroke-width="1.8"/>
+    <text x="1513.0" y="1547.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">Harbor & Quay</text>
+    <text x="1513.0" y="1559.4" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">(0m / -4.5m)</text>
+    <rect x="1486.0" y="966.0" width="72.0" height="45.0" fill="#2d3748" fill-opacity="0.75" stroke="#fc8181" stroke-width="1.8"/>
+    <text x="1522.0" y="984.9" fill="#f7fafc" font-size="9.5" font-weight="700" text-anchor="middle">N. Gate</text>
+    <line x1="1522.0" y1="1299.0" x2="1522.0" y2="1506.0" stroke="#f6ad55" stroke-width="3.0" marker-end="url(#flowArr)"/>
+    <line x1="1522.0" y1="1191.0" x2="1522.0" y2="1011.0" stroke="#f6ad55" stroke-width="2.5" marker-end="url(#flowArr)"/>
+    <line x1="1468.0" y1="1245.0" x2="1432.0" y2="1227.0" stroke="#d6bcfa" stroke-width="3.0" marker-end="url(#flowArr)"/>
+    <line x1="1576.0" y1="1245.0" x2="1666.0" y2="1335.0" stroke="#68d391" stroke-width="2.5" marker-end="url(#flowArr)"/>
+    <line x1="1576.0" y1="1245.0" x2="1666.0" y2="1137.0" stroke="#fbd38d" stroke-width="2.2" marker-end="url(#flowArr)"/>
+    <line x1="1414.0" y1="1191.0" x2="1387.0" y2="1128.0" stroke="#81e6d9" stroke-width="2.2" marker-end="url(#flowArr)"/>
+    <line x1="1522.0" y1="1479.0" x2="1630.0" y2="1479.0" stroke="#90cdf4" stroke-width="2.0" marker-end="url(#flowArr)"/>
+    <line x1="1630.0" y1="1479.0" x2="1630.0" y2="1038.0" stroke="#90cdf4" stroke-width="2.0" marker-end="url(#flowArr)"/>
+    <line x1="1630.0" y1="1038.0" x2="1324.0" y2="1038.0" stroke="#90cdf4" stroke-width="2.0" marker-end="url(#flowArr)"/>
+    <line x1="1324.0" y1="1038.0" x2="1324.0" y2="1479.0" stroke="#90cdf4" stroke-width="2.0" marker-end="url(#flowArr)"/>
+
+    <rect x="1875" y="900" width="475" height="430" rx="6" fill="#1e293b" stroke="#4a5568" stroke-width="1.2"/>
+    <text x="1895" y="930" fill="#ecc94b" font-size="14.5" font-weight="800">WORK-TRIANGLE DISTANCES &amp; TRANSIT TIMES</text>
+    <text x="1895" y="950" fill="#a0aec0" font-size="11">(Measured Door-to-Door at Base Jog ~6.5 m/s | Cart Haul ~4.0 m/s)</text>
+
+    <text x="1895" y="980" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ Resting Hall: <tspan fill="#fefcbf">4.0 m Skybridge</tspan> (<tspan fill="#68d391">0.6 sec</tspan>)</text>
+    <text x="1907" y="996" fill="#cbd5e0" font-size="10.5">Level Z=+4.0m indoor walk; zero rain exposure</text>
+    <text x="1895" y="1022" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ Hot Tub Spa: <tspan fill="#fefcbf">8.0 m (SW Exit)</tspan> (<tspan fill="#68d391">1.2 sec</tspan>)</text>
+    <text x="1907" y="1038" fill="#cbd5e0" font-size="10.5">Comfort buffs overlap SW house corner directly</text>
+    <text x="1895" y="1064" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ Harbor Quay: <tspan fill="#fefcbf">46.0 m South Axis</tspan> (<tspan fill="#68d391">7.0 sec</tspan>)</text>
+    <text x="1907" y="1080" fill="#cbd5e0" font-size="10.5">Straight cart run down King's Way (2× 2m stairs)</text>
+    <text x="1895" y="1106" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ Agriculture: <tspan fill="#fefcbf">20.0 m East Axis</tspan> (<tspan fill="#68d391">3.1 sec</tspan>)</text>
+    <text x="1907" y="1122" fill="#cbd5e0" font-size="10.5">East Portal → East Plaza Stair → West Farm Gate</text>
+    <text x="1895" y="1148" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ Animal Pens: <tspan fill="#fefcbf">32.0 m NE Route</tspan> (<tspan fill="#68d391">4.9 sec</tspan>)</text>
+    <text x="1907" y="1164" fill="#cbd5e0" font-size="10.5">Inside 64m active breeding zone; downwind buffer</text>
+    <text x="1895" y="1190" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ Portal Arches: <tspan fill="#fefcbf">28.0 m NW Route</tspan> (<tspan fill="#68d391">4.3 sec</tspan>)</text>
+    <text x="1907" y="1206" fill="#cbd5e0" font-size="10.5">Accessible via West Resting Hall or North Plaza</text>
+    <text x="1895" y="1232" fill="#f7fafc" font-size="11.5" font-weight="700">• Dreamhouse ↔ North Gate: <tspan fill="#fefcbf">44.0 m North Axis</tspan> (<tspan fill="#68d391">6.8 sec</tspan>)</text>
+    <text x="1907" y="1248" fill="#cbd5e0" font-size="10.5">Direct axial approach along 8m North Avenue</text>
+    <text x="1895" y="1274" fill="#f7fafc" font-size="11.5" font-weight="700">• Full Perimeter Ring Loop: <tspan fill="#fefcbf">368.0 m Total Loop</tspan> (<tspan fill="#68d391">56 sec</tspan>)</text>
+    <text x="1907" y="1290" fill="#cbd5e0" font-size="10.5">8m-wide continuous Grausten cart boulevard (Z=0m)</text>
+
+    <rect x="1875" y="1350" width="475" height="340" rx="6" fill="#1e293b" stroke="#48bb78" stroke-width="1.5"/>
+    <text x="1895" y="1380" fill="#68d391" font-size="14.5" font-weight="800">VERIFIED DEFENSIVE &amp; SPAWN MECHANICS</text>
+    <g transform="translate(1895, 1406)" font-size="11.2" fill="#e2e8f0">
+      <text x="0" y="0" font-weight="700" fill="#9ae6b4">1. 100% Raid Spawn Suppression (20m Radius Grid):</text>
+      <text x="12" y="18" fill="#cbd5e0">In Valheim, Player Base structures suppress all hostile &amp; event spawns</text>
+      <text x="12" y="34" fill="#cbd5e0">within 20.0 m. By burying 25 Campfires (or Wards) on a 24 m × 24 m</text>
+      <text x="12" y="50" fill="#cbd5e0">grid beneath the 4×4m Grausten floor tiles, the 20m circles overlap</text>
+      <text x="12" y="66" fill="#cbd5e0">with zero dead spots (max diagonal half-span = 16.97 m &lt; 20.0 m).</text>
+
+      <text x="0" y="96" font-weight="700" fill="#9ae6b4">2. Ha-Ha Dry Moat Pathfinding Immunity (Z = -2.5m):</text>
+      <text x="12" y="114" fill="#cbd5e0">A 4.0 m wide × 2.5 m deep vertical-walled trench outside the 3.0 m</text>
+      <text x="12" y="130" fill="#cbd5e0">Grausten curtain wall prevents Trolls, Fulings, and Charred from</text>
+      <text x="12" y="146" fill="#cbd5e0">meleeing the wall while keeping ocean &amp; meadow sightlines open.</text>
+
+      <text x="0" y="176" font-weight="700" fill="#9ae6b4">3. Active 64m Taming &amp; Breeding Zone Integration:</text>
+      <text x="12" y="194" fill="#cbd5e0">Zone C sits 28–58 m from the Dreamhouse (well within Valheim's</text>
+      <text x="12" y="210" fill="#cbd5e0">64.0 m active AI radius), so Boars, Hens, Lox, and Asksvin breed</text>
+      <text x="12" y="226" fill="#cbd5e0">continuously while you craft or organize chests in the Dreamhouse.</text>
+    </g>
+  </g>
+</svg>

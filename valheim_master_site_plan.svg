@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2608 2258"
+     width="2608" height="2258"
+     style="background-color:#0f141c; font-family:'Inter', 'Segoe UI', 'DejaVu Sans', sans-serif;">
+  <defs>
+    <pattern id="graustenGrid4m" width="48.0" height="48.0" patternUnits="userSpaceOnUse" x="764.0" y="1168.0">
+      <rect width="48.0" height="48.0" fill="none" stroke="#4a5568" stroke-width="0.9" stroke-opacity="0.55"/>
+      <line x1="24.0" y1="0" x2="24.0" y2="48.0" stroke="#4a5568" stroke-width="0.4" stroke-opacity="0.3" stroke-dasharray="2,2"/>
+      <line x1="0" y1="24.0" x2="48.0" y2="24.0" stroke="#4a5568" stroke-width="0.4" stroke-opacity="0.3" stroke-dasharray="2,2"/>
+    </pattern>
+    <pattern id="plazaPaving" width="48.0" height="48.0" patternUnits="userSpaceOnUse" x="764.0" y="1168.0">
+      <rect width="48.0" height="48.0" fill="#2b3340" stroke="#718096" stroke-width="1.2" stroke-opacity="0.7"/>
+      <rect x="3" y="3" width="42.0" height="42.0" fill="none" stroke="#a0aec0" stroke-width="0.5" stroke-opacity="0.35"/>
+    </pattern>
+    <pattern id="cultivatedSoil" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#3b281e"/>
+      <line x1="0" y1="6" x2="12" y2="6" stroke="#5c3d2e" stroke-width="2" stroke-dasharray="8,4"/>
+      <circle cx="3" cy="6" r="1.8" fill="#68d391" opacity="0.8"/>
+      <circle cx="9" cy="6" r="1.8" fill="#68d391" opacity="0.8"/>
+    </pattern>
+    <pattern id="waterWaves" width="48" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 0 12 Q 12 6, 24 12 T 48 12" fill="none" stroke="#63b3ed" stroke-width="1" stroke-opacity="0.25"/>
+    </pattern>
+    <pattern id="moatHatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="16" height="16" fill="#1a241e"/>
+      <line x1="0" y1="0" x2="0" y2="16" stroke="#2f4f3e" stroke-width="3"/>
+    </pattern>
+    <marker id="dimArrowStart" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto">
+      <path d="M 9 1 L 1 5 L 9 9 z" fill="#f6e05e"/>
+    </marker>
+    <marker id="dimArrowEnd" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 1 1 L 9 5 L 1 9 z" fill="#f6e05e"/>
+    </marker>
+    <marker id="circArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 1 L 7 4 L 0 7 z" fill="#f6ad55"/>
+    </marker>
+    <marker id="axisArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#fc8181"/>
+    </marker>
+    <filter id="dropShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+
+  <g id="layer-titleblock">
+    <rect x="20" y="20" width="2568" height="110" rx="6" fill="#161f2c" stroke="#4a5568" stroke-width="2"/>
+    <text x="45" y="60" fill="#f7fafc" font-size="28" font-weight="800" letter-spacing="1">VALHEIM COASTAL MEGA-BASE — MASTER SITE PLAN (CONCEPT A: SEAWARD AXIAL FORUM)</text>
+    <text x="45" y="90" fill="#a0aec0" font-size="15" font-weight="500">Authoritative 2D Technical Layout  |  Module: 4.0 m × 4.0 m Grausten Floor Grid  |  Origin (0, 0, 0): SW Corner of 24 × 24 m Dreamhouse</text>
+    <text x="45" y="114" fill="#63b3ed" font-size="13" font-weight="600">Fixed Elevations Preserved: Ground Level Z = 0.0 m  •  Elevated Outdoor Plaza (36 × 36 m) Z = +2.0 m  •  Dreamhouse Main Floor (24 × 24 m) Z = +4.0 m  •  Sea Level Z = -1.5 m</text>
+    <rect x="2228" y="36" width="335" height="78" rx="4" fill="#1e293b" stroke="#ecc94b" stroke-width="1.5"/>
+    <text x="2246" y="60" fill="#ecc94b" font-size="13" font-weight="700">DRAWING NO: VMB-MP-01 (REV A)</text>
+    <text x="2246" y="80" fill="#e2e8f0" font-size="12">Site Envelope: 128 m (E-W) × 148 m (S-N)</text>
+    <text x="2246" y="99" fill="#cbd5e0" font-size="12">Scale: 1 : 100 Metric (1 Grid Square = 4 m × 4 m)</text>
+  </g>
+
+
+  <g id="layer-terrain-water">
+    <rect x="140.0" y="160.0" width="1728.0" height="1536.0" fill="#1b2a1e"/>
+    <rect x="140.0" y="1696.0" width="1728.0" height="432.0" fill="#0c2538"/>
+    <rect x="140.0" y="1696.0" width="1728.0" height="432.0" fill="url(#waterWaves)"/>
+    <rect x="668.0" y="1744.0" width="432.0" height="240.0" rx="6" fill="#081a29" stroke="#4299e1" stroke-width="1.5" stroke-dasharray="8,4"/>
+    <path d="M 1100.0 1744.0 L 1340.0 1840.0 L 1388.0 2128.0 L 1004.0 2128.0 L 1004.0 1984.0 L 1100.0 1984.0 Z"
+          fill="#081a29" stroke="#4299e1" stroke-width="1.2" stroke-dasharray="6,4" opacity="0.85"/>
+    <rect x="236.0" y="304.0" width="1536.0" height="1392.0" fill="#1e242d" stroke="#718096" stroke-width="2"/>
+  </g>
+
+  <g id="layer-grid-4m">
+    <rect x="236.0" y="304.0" width="1536.0" height="1392.0" fill="url(#graustenGrid4m)"/>
+    <line x1="140.0" y1="160.0" x2="140.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="188.0" y1="160.0" x2="188.0" y2="2128.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="188.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=-48m</text>
+    <text x="188.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=-48m</text>
+    <line x1="236.0" y1="160.0" x2="236.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="284.0" y1="160.0" x2="284.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="284.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-40m</text>
+    <text x="284.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-40m</text>
+    <line x1="332.0" y1="160.0" x2="332.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="380.0" y1="160.0" x2="380.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="380.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-32m</text>
+    <text x="380.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-32m</text>
+    <line x1="428.0" y1="160.0" x2="428.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="476.0" y1="160.0" x2="476.0" y2="2128.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="476.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=-24m</text>
+    <text x="476.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=-24m</text>
+    <line x1="524.0" y1="160.0" x2="524.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="572.0" y1="160.0" x2="572.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="572.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-16m</text>
+    <text x="572.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-16m</text>
+    <line x1="620.0" y1="160.0" x2="620.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="668.0" y1="160.0" x2="668.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="668.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-8m</text>
+    <text x="668.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=-8m</text>
+    <line x1="716.0" y1="160.0" x2="716.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="764.0" y1="160.0" x2="764.0" y2="2128.0" stroke="#fc8181" stroke-width="2.0" stroke-opacity="0.75"/>
+    <text x="764.0" y="150.0" fill="#feb2b2" font-size="10" font-weight="700" text-anchor="middle">X=0m</text>
+    <text x="764.0" y="2146.0" fill="#feb2b2" font-size="10" font-weight="700" text-anchor="middle">X=0m</text>
+    <line x1="812.0" y1="160.0" x2="812.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="860.0" y1="160.0" x2="860.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="860.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+8m</text>
+    <text x="860.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+8m</text>
+    <line x1="908.0" y1="160.0" x2="908.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="956.0" y1="160.0" x2="956.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="956.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+16m</text>
+    <text x="956.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+16m</text>
+    <line x1="1004.0" y1="160.0" x2="1004.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1052.0" y1="160.0" x2="1052.0" y2="2128.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="1052.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=+24m</text>
+    <text x="1052.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=+24m</text>
+    <line x1="1100.0" y1="160.0" x2="1100.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1148.0" y1="160.0" x2="1148.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="1148.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+32m</text>
+    <text x="1148.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+32m</text>
+    <line x1="1196.0" y1="160.0" x2="1196.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1244.0" y1="160.0" x2="1244.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="1244.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+40m</text>
+    <text x="1244.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+40m</text>
+    <line x1="1292.0" y1="160.0" x2="1292.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1340.0" y1="160.0" x2="1340.0" y2="2128.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="1340.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=+48m</text>
+    <text x="1340.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=+48m</text>
+    <line x1="1388.0" y1="160.0" x2="1388.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1436.0" y1="160.0" x2="1436.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="1436.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+56m</text>
+    <text x="1436.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+56m</text>
+    <line x1="1484.0" y1="160.0" x2="1484.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1532.0" y1="160.0" x2="1532.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="1532.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+64m</text>
+    <text x="1532.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+64m</text>
+    <line x1="1580.0" y1="160.0" x2="1580.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1628.0" y1="160.0" x2="1628.0" y2="2128.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="1628.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=+72m</text>
+    <text x="1628.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">X=+72m</text>
+    <line x1="1676.0" y1="160.0" x2="1676.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1724.0" y1="160.0" x2="1724.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="1724.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+80m</text>
+    <text x="1724.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+80m</text>
+    <line x1="1772.0" y1="160.0" x2="1772.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="1820.0" y1="160.0" x2="1820.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="1820.0" y="150.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+88m</text>
+    <text x="1820.0" y="2146.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="middle">X=+88m</text>
+    <line x1="1868.0" y1="160.0" x2="1868.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="2128.0" x2="1868.0" y2="2128.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="2132.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-80m</text>
+    <text x="1876.0" y="2132.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-80m</text>
+    <line x1="140.0" y1="2080.0" x2="1868.0" y2="2080.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="2032.0" x2="1868.0" y2="2032.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="130.0" y="2036.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="end">Y=-72m</text>
+    <text x="1876.0" y="2036.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="start">Y=-72m</text>
+    <line x1="140.0" y1="1984.0" x2="1868.0" y2="1984.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1936.0" x2="1868.0" y2="1936.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1940.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-64m</text>
+    <text x="1876.0" y="1940.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-64m</text>
+    <line x1="140.0" y1="1888.0" x2="1868.0" y2="1888.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1840.0" x2="1868.0" y2="1840.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1844.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-56m</text>
+    <text x="1876.0" y="1844.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-56m</text>
+    <line x1="140.0" y1="1792.0" x2="1868.0" y2="1792.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1744.0" x2="1868.0" y2="1744.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="130.0" y="1748.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="end">Y=-48m</text>
+    <text x="1876.0" y="1748.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="start">Y=-48m</text>
+    <line x1="140.0" y1="1696.0" x2="1868.0" y2="1696.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1648.0" x2="1868.0" y2="1648.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1652.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-40m</text>
+    <text x="1876.0" y="1652.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-40m</text>
+    <line x1="140.0" y1="1600.0" x2="1868.0" y2="1600.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1552.0" x2="1868.0" y2="1552.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1556.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-32m</text>
+    <text x="1876.0" y="1556.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-32m</text>
+    <line x1="140.0" y1="1504.0" x2="1868.0" y2="1504.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1456.0" x2="1868.0" y2="1456.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="130.0" y="1460.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="end">Y=-24m</text>
+    <text x="1876.0" y="1460.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="start">Y=-24m</text>
+    <line x1="140.0" y1="1408.0" x2="1868.0" y2="1408.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1360.0" x2="1868.0" y2="1360.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1364.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-16m</text>
+    <text x="1876.0" y="1364.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-16m</text>
+    <line x1="140.0" y1="1312.0" x2="1868.0" y2="1312.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1264.0" x2="1868.0" y2="1264.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1268.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=-8m</text>
+    <text x="1876.0" y="1268.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=-8m</text>
+    <line x1="140.0" y1="1216.0" x2="1868.0" y2="1216.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1168.0" x2="1868.0" y2="1168.0" stroke="#fc8181" stroke-width="2.0" stroke-opacity="0.75"/>
+    <text x="130.0" y="1172.0" fill="#feb2b2" font-size="10" font-weight="700" text-anchor="end">Y=0m</text>
+    <text x="1876.0" y="1172.0" fill="#feb2b2" font-size="10" font-weight="700" text-anchor="start">Y=0m</text>
+    <line x1="140.0" y1="1120.0" x2="1868.0" y2="1120.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="1072.0" x2="1868.0" y2="1072.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="1076.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+8m</text>
+    <text x="1876.0" y="1076.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+8m</text>
+    <line x1="140.0" y1="1024.0" x2="1868.0" y2="1024.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="976.0" x2="1868.0" y2="976.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="980.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+16m</text>
+    <text x="1876.0" y="980.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+16m</text>
+    <line x1="140.0" y1="928.0" x2="1868.0" y2="928.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="880.0" x2="1868.0" y2="880.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="130.0" y="884.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="end">Y=+24m</text>
+    <text x="1876.0" y="884.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="start">Y=+24m</text>
+    <line x1="140.0" y1="832.0" x2="1868.0" y2="832.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="784.0" x2="1868.0" y2="784.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="788.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+32m</text>
+    <text x="1876.0" y="788.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+32m</text>
+    <line x1="140.0" y1="736.0" x2="1868.0" y2="736.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="688.0" x2="1868.0" y2="688.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="692.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+40m</text>
+    <text x="1876.0" y="692.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+40m</text>
+    <line x1="140.0" y1="640.0" x2="1868.0" y2="640.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="592.0" x2="1868.0" y2="592.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="130.0" y="596.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="end">Y=+48m</text>
+    <text x="1876.0" y="596.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="start">Y=+48m</text>
+    <line x1="140.0" y1="544.0" x2="1868.0" y2="544.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="496.0" x2="1868.0" y2="496.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="500.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+56m</text>
+    <text x="1876.0" y="500.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+56m</text>
+    <line x1="140.0" y1="448.0" x2="1868.0" y2="448.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="400.0" x2="1868.0" y2="400.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="404.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+64m</text>
+    <text x="1876.0" y="404.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+64m</text>
+    <line x1="140.0" y1="352.0" x2="1868.0" y2="352.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="304.0" x2="1868.0" y2="304.0" stroke="#a0aec0" stroke-width="0.9" stroke-opacity="0.45"/>
+    <text x="130.0" y="308.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="end">Y=+72m</text>
+    <text x="1876.0" y="308.0" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="start">Y=+72m</text>
+    <line x1="140.0" y1="256.0" x2="1868.0" y2="256.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <line x1="140.0" y1="208.0" x2="1868.0" y2="208.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+    <text x="130.0" y="212.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="end">Y=+80m</text>
+    <text x="1876.0" y="212.0" fill="#cbd5e0" font-size="10" font-weight="400" text-anchor="start">Y=+80m</text>
+    <line x1="140.0" y1="160.0" x2="1868.0" y2="160.0" stroke="#4a5568" stroke-width="0.45" stroke-opacity="0.25"/>
+  </g>
+  <g id="layer-zones">
+    <rect x="188.0" y="256.0" width="48.0" height="1440.0" fill="url(#moatHatch)" stroke="#38a169" stroke-width="1" stroke-opacity="0.6"/>
+    <rect x="188.0" y="256.0" width="624.0" height="48.0" fill="url(#moatHatch)" stroke="#38a169" stroke-width="1" stroke-opacity="0.6"/>
+    <rect x="1004.0" y="256.0" width="816.0" height="48.0" fill="url(#moatHatch)" stroke="#38a169" stroke-width="1" stroke-opacity="0.6"/>
+    <rect x="1772.0" y="256.0" width="48.0" height="624.0" fill="url(#moatHatch)" stroke="#38a169" stroke-width="1" stroke-opacity="0.6"/>
+    <rect x="1772.0" y="976.0" width="48.0" height="720.0" fill="url(#moatHatch)" stroke="#38a169" stroke-width="1" stroke-opacity="0.6"/>
+    <rect x="332.0" y="544.0" width="384.0" height="288.0" rx="4" fill="#233831" fill-opacity="0.65" stroke="#4fd1c5" stroke-width="2" stroke-dasharray="8,4"/>
+    <rect x="332.0" y="1264.0" width="192.0" height="336.0" rx="4" fill="#233831" fill-opacity="0.55" stroke="#4fd1c5" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <rect x="1244.0" y="976.0" width="432.0" height="576.0" fill="#273822" fill-opacity="0.8" stroke="#68d391" stroke-width="2.5"/>
+    <rect x="1244.0" y="496.0" width="432.0" height="384.0" fill="#3b2f1e" fill-opacity="0.8" stroke="#f6ad55" stroke-width="2.5"/>
+    <rect x="1244.0" y="880.0" width="432.0" height="96.0" fill="#1e3323" fill-opacity="0.7"/>
+    <rect x="716.0" y="832.0" width="432.0" height="432.0" fill="url(#plazaPaving)" stroke="#ecc94b" stroke-width="3.5" filter="url(#dropShadow)"/>
+    <rect x="476.0" y="880.0" width="240.0" height="288.0" fill="#2d2638" stroke="#b794f4" stroke-width="2.5" filter="url(#dropShadow)"/>
+  </g>
+  <g id="layer-circulation">
+    <rect x="860.0" y="1312.0" width="96.0" height="384.0" fill="#364152" stroke="#90cdf4" stroke-width="1.8"/>
+    <rect x="764.0" y="1360.0" width="288.0" height="144.0" fill="#364152" stroke="#90cdf4" stroke-width="1.8"/>
+    <rect x="860.0" y="352.0" width="96.0" height="432.0" fill="#364152" stroke="#90cdf4" stroke-width="1.8"/>
+    <rect x="332.0" y="1600.0" width="1344.0" height="96.0" fill="#2d3748" stroke="#718096" stroke-width="1.5"/>
+    <rect x="1148.0" y="448.0" width="96.0" height="1152.0" fill="#2d3748" stroke="#718096" stroke-width="1.5"/>
+    <rect x="332.0" y="400.0" width="1344.0" height="96.0" fill="#2d3748" stroke="#718096" stroke-width="1.5"/>
+    <rect x="332.0" y="448.0" width="96.0" height="1152.0" fill="#2d3748" stroke="#718096" stroke-width="1.5"/>
+    <path d="M 908.0 280.0 L 908.0 832.0 M 908.0 1264.0 L 908.0 1744.0" fill="none" stroke="#f6ad55" stroke-width="2.2" stroke-dasharray="8,6" marker-end="url(#circArrow)"/>
+    <path d="M 380.0 1648.0 L 1196.0 1648.0 L 1196.0 448.0 L 380.0 448.0 Z" fill="none" stroke="#f6ad55" stroke-width="1.8" stroke-dasharray="10,6" stroke-opacity="0.75"/>
+  </g>
+  <g id="layer-structures">
+    <rect x="764.0" y="880.0" width="288.0" height="288.0" fill="#3b1d2e" stroke="#f687b3" stroke-width="4" filter="url(#dropShadow)"/>
+    <polygon points="800.0,880.0 1016.0,880.0 1052.0,916.0 1052.0,1132.0 1016.0,1168.0 800.0,1168.0 764.0,1132.0 764.0,916.0" fill="#4a192c" stroke="#fbb6ce" stroke-width="2.5"/>
+    <rect x="778.4000000000001" y="1066.0" width="87.6" height="87.6" rx="4" fill="#2d121e" stroke="#f687b3" stroke-width="1.2" stroke-dasharray="3,2"/>
+    <rect x="950.0" y="1066.0" width="87.60000000000001" height="87.6" rx="4" fill="#2d121e" stroke="#f687b3" stroke-width="1.2" stroke-dasharray="3,2"/>
+    <rect x="950.0" y="894.4000000000001" width="87.60000000000001" height="87.60000000000001" rx="4" fill="#2d121e" stroke="#f687b3" stroke-width="1.2" stroke-dasharray="3,2"/>
+    <rect x="778.4000000000001" y="894.4000000000001" width="87.6" height="87.60000000000001" rx="4" fill="#2d121e" stroke="#f687b3" stroke-width="1.2" stroke-dasharray="3,2"/>
+    <rect x="860.0" y="862.0" width="96.0" height="42.0" fill="#742a2a" stroke="#feb2b2" stroke-width="2.2"/>
+    <text x="908.0" y="886.5999999999999" fill="#fff5f5" font-size="8.5" font-weight="700" text-anchor="middle">CHIMNEY &amp; KITCHEN</text>
+    <rect x="944.0" y="988.0" width="24.0" height="24.0" fill="#9b2c2c" stroke="#feb2b2" stroke-width="1.5"/>
+    <line x1="764.0" y1="880.0" x2="1052.0" y2="1168.0" stroke="#fbb6ce" stroke-width="0.9" stroke-opacity="0.45"/>
+    <line x1="1052.0" y1="880.0" x2="764.0" y2="1168.0" stroke="#fbb6ce" stroke-width="0.9" stroke-opacity="0.45"/>
+    <rect x="806.0" y="1000.0" width="204.0" height="50.400000000000006" rx="4" fill="#1a1016" fill-opacity="0.92" stroke="#f687b3" stroke-width="1.5"/>
+    <text x="908.0" y="1016.8000000000001" fill="#fed7e2" font-size="12.5" font-weight="800" text-anchor="middle">A1. EXISTING DREAMHOUSE</text>
+    <text x="908.0" y="1033.6" fill="#fbb6ce" font-size="10" font-weight="600" text-anchor="middle">24m × 24m  |  Main Floor Z = +4.0m</text>
+    <text x="908.0" y="1048.0" fill="#e2e8f0" font-size="9" text-anchor="middle">4 Crafting Zones • 60 Chests • +0m Basement</text>
+    <rect x="884.0" y="1168.0" width="48.0" height="48.0" fill="#cbd5e0" fill-opacity="0.25" stroke="#ecc94b" stroke-width="1.8"/>
+    <line x1="884.0" y1="1176.0" x2="932.0" y2="1176.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="884.0" y1="1184.0" x2="932.0" y2="1184.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="884.0" y1="1192.0" x2="932.0" y2="1192.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="884.0" y1="1200.0" x2="932.0" y2="1200.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="884.0" y1="1208.0" x2="932.0" y2="1208.0" stroke="#ecc94b" stroke-width="1"/>
+    <text x="908.0" y="1195.0" fill="#fefcbf" font-size="8.5" font-weight="700" text-anchor="middle">Stair +4→+2m</text>
+    <rect x="1052.0" y="1000.0" width="48.0" height="48.0" fill="#cbd5e0" fill-opacity="0.25" stroke="#ecc94b" stroke-width="1.8"/>
+    <line x1="1060.0" y1="1000.0" x2="1060.0" y2="1048.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1068.0" y1="1000.0" x2="1068.0" y2="1048.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1076.0" y1="1000.0" x2="1076.0" y2="1048.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1084.0" y1="1000.0" x2="1084.0" y2="1048.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1092.0" y1="1000.0" x2="1092.0" y2="1048.0" stroke="#ecc94b" stroke-width="1"/>
+    <text x="1076.0" y="1027.0" fill="#fefcbf" font-size="8.5" font-weight="700" text-anchor="middle">+4→+2m</text>
+    <rect x="860.0" y="1264.0" width="96.0" height="48.0" fill="#cbd5e0" fill-opacity="0.25" stroke="#ecc94b" stroke-width="1.8"/>
+    <line x1="860.0" y1="1272.0" x2="956.0" y2="1272.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="1280.0" x2="956.0" y2="1280.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="1288.0" x2="956.0" y2="1288.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="1296.0" x2="956.0" y2="1296.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="1304.0" x2="956.0" y2="1304.0" stroke="#ecc94b" stroke-width="1"/>
+    <text x="908.0" y="1291.0" fill="#fefcbf" font-size="8.5" font-weight="700" text-anchor="middle">GRAND STAIR +2.0m → 0.0m</text>
+    <rect x="1148.0" y="976.0" width="48.0" height="96.0" fill="#cbd5e0" fill-opacity="0.25" stroke="#ecc94b" stroke-width="1.8"/>
+    <line x1="1156.0" y1="976.0" x2="1156.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1164.0" y1="976.0" x2="1164.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1172.0" y1="976.0" x2="1172.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1180.0" y1="976.0" x2="1180.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="1188.0" y1="976.0" x2="1188.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <text x="1172.0" y="1027.0" fill="#fefcbf" font-size="8.5" font-weight="700" text-anchor="middle">+2→0m</text>
+    <rect x="860.0" y="784.0" width="96.0" height="48.0" fill="#cbd5e0" fill-opacity="0.25" stroke="#ecc94b" stroke-width="1.8"/>
+    <line x1="860.0" y1="792.0" x2="956.0" y2="792.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="800.0" x2="956.0" y2="800.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="808.0" x2="956.0" y2="808.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="816.0" x2="956.0" y2="816.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="860.0" y1="824.0" x2="956.0" y2="824.0" stroke="#ecc94b" stroke-width="1"/>
+    <text x="908.0" y="811.0" fill="#fefcbf" font-size="8.5" font-weight="700" text-anchor="middle">North Stair +2→0m</text>
+    <rect x="428.0" y="976.0" width="48.0" height="96.0" fill="#cbd5e0" fill-opacity="0.25" stroke="#ecc94b" stroke-width="1.8"/>
+    <line x1="436.0" y1="976.0" x2="436.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="444.0" y1="976.0" x2="444.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="452.0" y1="976.0" x2="452.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="460.0" y1="976.0" x2="460.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <line x1="468.0" y1="976.0" x2="468.0" y2="1072.0" stroke="#ecc94b" stroke-width="1"/>
+    <text x="452.0" y="1027.0" fill="#fefcbf" font-size="8.5" font-weight="700" text-anchor="middle">+2→0m</text>
+    <rect x="716.0" y="976.0" width="48.0" height="96.0" fill="#553c9a" stroke="#d6bcfa" stroke-width="2.5"/>
+    <text x="740.0" y="1018.0" fill="#faf5ff" font-size="8" font-weight="700" text-anchor="middle">BRIDGE</text>
+    <text x="740.0" y="1033.6" fill="#e9d8fd" font-size="8" font-weight="700" text-anchor="middle">Z=+4m</text>
+    <rect x="524.0" y="880.0" width="192.0" height="192.0" fill="#44337a" stroke="#d6bcfa" stroke-width="3" filter="url(#dropShadow)"/>
+    <line x1="524.0" y1="880.0" x2="716.0" y2="1072.0" stroke="#d6bcfa" stroke-width="0.8" stroke-opacity="0.4"/>
+    <line x1="716.0" y1="880.0" x2="524.0" y2="1072.0" stroke="#d6bcfa" stroke-width="0.8" stroke-opacity="0.4"/>
+    <rect x="533.5999999999999" y="934.0" width="172.8" height="81.6" rx="4" fill="#22193d" fill-opacity="0.9" stroke="#b794f4" stroke-width="1"/>
+    <text x="620.0" y="952.0" fill="#faf5ff" font-size="10.5" font-weight="800" text-anchor="middle">A3. RESTING EXTENSION</text>
+    <text x="620.0" y="970.0" fill="#e9d8fd" font-size="9" font-weight="600" text-anchor="middle">16m × 16m | Floor Z = +4.0m</text>
+    <text x="620.0" y="988.0" fill="#cbd5e0" font-size="8.2" text-anchor="middle">Dragon Beds • Hearth • Comfort 18+</text>
+    <text x="620.0" y="1004.8000000000001" fill="#cbd5e0" font-size="8.2" text-anchor="middle">Darkwood &amp; Black Marble Hall</text>
+    <rect x="524.0" y="1084.0" width="180.0" height="72.0" rx="4" fill="#2a4365" stroke="#90cdf4" stroke-width="1.5"/>
+    <circle cx="668.0" cy="1120.0" r="20.4" fill="#3182ce" stroke="#bee3f8" stroke-width="1.5"/>
+    <text x="593.5999999999999" y="1114.0" fill="#ebf8ff" font-size="8.8" font-weight="700" text-anchor="middle">Hot Tub &amp; Maypole</text>
+    <text x="593.5999999999999" y="1132.0" fill="#bee3f8" font-size="8.2" text-anchor="middle">Spa Court (Z = +2.0m)</text>
+    <circle cx="1100.0" cy="1216.0" r="24.0" fill="#744210" stroke="#f6e05e" stroke-width="1.8"/>
+    <text x="1100.0" y="1219.0" fill="#fefcbf" font-size="8" font-weight="700" text-anchor="middle">Brazier</text>
+    <rect x="725.5999999999999" y="1219.6" width="148.8" height="33.599999999999994" rx="3" fill="#1a202c" fill-opacity="0.9" stroke="#ecc94b" stroke-width="1.2"/>
+    <text x="800.0" y="1234.0" fill="#fefcbf" font-size="9" font-weight="800" text-anchor="middle">A2. ELEVATED PLAZA</text>
+    <text x="800.0" y="1247.1999999999998" fill="#ecc94b" font-size="8.2" font-weight="600" text-anchor="middle">36m × 36m (Z = +2.0m)</text>
+    <rect x="1292.0" y="1360.0" width="144.0" height="144.0" fill="url(#cultivatedSoil)" stroke="#9ae6b4" stroke-width="2"/>
+    <rect x="1302.0" y="1410.0" width="124.0" height="44" rx="3" fill="#1a202c" fill-opacity="0.88" stroke="#68d391" stroke-width="1"/>
+    <text x="1364.0" y="1428.0" fill="#c6f6d5" font-size="9.5" font-weight="700" text-anchor="middle">PLOT B1: CARROTS</text>
+    <text x="1364.0" y="1444.0" fill="#e2e8f0" font-size="8.5" text-anchor="middle">12m × 12m Open-Sky Soil</text>
+    <rect x="1484.0" y="1360.0" width="144.0" height="144.0" fill="url(#cultivatedSoil)" stroke="#9ae6b4" stroke-width="2"/>
+    <rect x="1494.0" y="1410.0" width="124.0" height="44" rx="3" fill="#1a202c" fill-opacity="0.88" stroke="#68d391" stroke-width="1"/>
+    <text x="1556.0" y="1428.0" fill="#c6f6d5" font-size="9.5" font-weight="700" text-anchor="middle">PLOT B2: TURNIPS</text>
+    <text x="1556.0" y="1444.0" fill="#e2e8f0" font-size="8.5" text-anchor="middle">12m × 12m Open-Sky Soil</text>
+    <rect x="1292.0" y="1168.0" width="144.0" height="144.0" fill="url(#cultivatedSoil)" stroke="#9ae6b4" stroke-width="2"/>
+    <rect x="1302.0" y="1218.0" width="124.0" height="44" rx="3" fill="#1a202c" fill-opacity="0.88" stroke="#68d391" stroke-width="1"/>
+    <text x="1364.0" y="1236.0" fill="#c6f6d5" font-size="9.5" font-weight="700" text-anchor="middle">PLOT B3: ONIONS</text>
+    <text x="1364.0" y="1252.0" fill="#e2e8f0" font-size="8.5" text-anchor="middle">12m × 12m Open-Sky Soil</text>
+    <rect x="1484.0" y="1168.0" width="144.0" height="144.0" fill="url(#cultivatedSoil)" stroke="#9ae6b4" stroke-width="2"/>
+    <rect x="1494.0" y="1218.0" width="124.0" height="44" rx="3" fill="#1a202c" fill-opacity="0.88" stroke="#68d391" stroke-width="1"/>
+    <text x="1556.0" y="1236.0" fill="#c6f6d5" font-size="9.5" font-weight="700" text-anchor="middle">PLOT B4: ORCHARD & BEES</text>
+    <text x="1556.0" y="1252.0" fill="#e2e8f0" font-size="8.5" text-anchor="middle">12m × 12m Cultivated Plot</text>
+    <rect x="1292.0" y="1024.0" width="336.0" height="96.0" fill="#2f4f3e" stroke="#9ae6b4" stroke-width="2.5" filter="url(#dropShadow)"/>
+    <circle cx="1556.0" cy="1072.0" r="38.400000000000006" fill="#234e52" stroke="#81e6d9" stroke-width="2"/>
+    <line x1="1524.0" y1="1040.0" x2="1588.0" y2="1104.0" stroke="#e6fffa" stroke-width="2.2"/>
+    <line x1="1588.0" y1="1040.0" x2="1524.0" y2="1104.0" stroke="#e6fffa" stroke-width="2.2"/>
+    <text x="1400.0" y="1066.0" fill="#f0fff4" font-size="10.5" font-weight="800" text-anchor="middle">B5. GRANARY &amp; SEED HOUSE</text>
+    <text x="1400.0" y="1086.4" fill="#c6f6d5" font-size="8.5" text-anchor="middle">28m × 8m | Windmill Tower (East)</text>
+    <rect x="1652.0" y="1120.0" width="24.0" height="384.0" fill="#22543d" stroke="#48bb78" stroke-width="1.5"/>
+    <text x="1664.0" y="1312.0" fill="#9ae6b4" font-size="8.5" font-weight="700" text-anchor="middle" transform="rotate(-90 1664.0 1312.0)">VINEBERRY TRELLIS WALL (3.6m Spacing)</text>
+    <text x="1460.0" y="1002.4000000000001" fill="#9ae6b4" font-size="12" font-weight="800" text-anchor="middle">ZONE B: AGRICULTURE COMPOUND (36m × 48m, Z = 0.0m)</text>
+    <rect x="1292.0" y="640.0" width="144.0" height="192.0" fill="#5c3d2e" stroke="#fbd38d" stroke-width="2.2" filter="url(#dropShadow)"/>
+    <text x="1364.0" y="718.0" fill="#fffaf0" font-size="10" font-weight="800" text-anchor="middle">C1. BOAR &amp; HEN</text>
+    <text x="1364.0" y="738.4000000000001" fill="#fbd38d" font-size="9" font-weight="600" text-anchor="middle">BREEDING BARN</text>
+    <text x="1364.0" y="760.0" fill="#e2e8f0" font-size="8" text-anchor="middle">12m × 16m Roofed</text>
+    <text x="1364.0" y="778.0" fill="#e2e8f0" font-size="8" text-anchor="middle">(Bat/Drake Raid-Safe)</text>
+    <rect x="1484.0" y="544.0" width="144.0" height="288.0" fill="#3d271d" stroke="#ed8936" stroke-width="3" stroke-dasharray="8,3"/>
+    <text x="1556.0" y="664.0" fill="#fffaf0" font-size="10" font-weight="800" text-anchor="middle">C2. LOX / ASKSVIN</text>
+    <text x="1556.0" y="685.5999999999999" fill="#fbd38d" font-size="9" font-weight="700" text-anchor="middle">SUNKEN PADDOCK</text>
+    <text x="1556.0" y="707.2" fill="#e2e8f0" font-size="8" text-anchor="middle">12m × 24m | Floor Z=-2.0m</text>
+    <text x="1556.0" y="726.4000000000001" fill="#e2e8f0" font-size="8" text-anchor="middle">Earth-Core Retaining Wall</text>
+    <rect x="1292.0" y="544.0" width="144.0" height="72.0" fill="#654321" stroke="#fbd38d" stroke-width="2"/>
+    <text x="1364.0" y="577.5999999999999" fill="#fffaf0" font-size="9" font-weight="700" text-anchor="middle">C3. SADDLE &amp; FEED BARN</text>
+    <text x="1364.0" y="596.8" fill="#fbd38d" font-size="8" text-anchor="middle">12m × 6m | Double Airlock</text>
+    <text x="1460.0" y="522.4000000000001" fill="#fbd38d" font-size="11.5" font-weight="800" text-anchor="middle">ZONE C: ANIMAL HUSBANDRY (36m × 32m, Z = 0.0m)</text>
+    <rect x="428.0" y="592.0" width="240.0" height="120.0" rx="6" fill="#1d4044" stroke="#81e6d9" stroke-width="2.5" filter="url(#dropShadow)"/>
+    <circle cx="464.0" cy="622.0" r="8" fill="#319795" stroke="#e6fffa" stroke-width="1.5"/>
+    <circle cx="524.0" cy="622.0" r="8" fill="#319795" stroke="#e6fffa" stroke-width="1.5"/>
+    <circle cx="572.0" cy="622.0" r="8" fill="#319795" stroke="#e6fffa" stroke-width="1.5"/>
+    <circle cx="632.0" cy="622.0" r="8" fill="#319795" stroke="#e6fffa" stroke-width="1.5"/>
+    <text x="548.0" y="666.4000000000001" fill="#e6fffa" font-size="10.5" font-weight="800" text-anchor="middle">F1. STONE PORTAL COLONNADE</text>
+    <text x="548.0" y="690.4000000000001" fill="#81e6d9" font-size="8.5" text-anchor="middle">20m × 10m Grausten Arches (6 Portals)</text>
+    <circle cx="548.0" cy="778.0" r="38.400000000000006" fill="#22543d" stroke="#68d391" stroke-width="2"/>
+    <circle cx="548.0" cy="778.0" r="5" fill="#744210"/>
+    <text x="548.0" y="781.0" fill="#f0fff4" font-size="8.5" font-weight="700" text-anchor="middle">ANCIENT OAK</text>
+    <rect x="380.0" y="1408.0" width="120.0" height="120.0" rx="4" fill="#2c3e50" stroke="#81e6d9" stroke-width="2"/>
+    <circle cx="440.0" cy="1468.0" r="14" fill="#319795" stroke="#e6fffa" stroke-width="1.5"/>
+    <text x="440.0" y="1554.4" fill="#81e6d9" font-size="9" font-weight="700" text-anchor="middle">F2. Obliterator Court</text>
+    <rect x="884.0" y="1408.0" width="48.0" height="48.0" fill="#744210" stroke="#f6e05e" stroke-width="2.2"/>
+    <circle cx="908.0" cy="1432.0" r="10" fill="#ecc94b"/>
+    <text x="908.0" y="1482.4" fill="#fefcbf" font-size="9" font-weight="700" text-anchor="middle">F3. Wayfinder Obelisk</text>
+    <line x1="236.0" y1="1696.0" x2="1772.0" y2="1696.0" stroke="#e2e8f0" stroke-width="4"/>
+    <rect x="668.0" y="1696.0" width="432.0" height="48.0" fill="#4a5568" stroke="#ecc94b" stroke-width="2.2" filter="url(#dropShadow)"/>
+    <rect x="860.0" y="1726.0" width="96.0" height="27.599999999999966" fill="#744210" stroke="#f6e05e" stroke-width="1.5"/>
+    <text x="908.0" y="1722.3999999999999" fill="#fefcbf" font-size="9" font-weight="700" text-anchor="middle">E1. 36m MAIN QUAY &amp; GANGWAY (Z = 0.0m / -0.5m)</text>
+    <rect x="476.0" y="1600.0" width="192.0" height="96.0" fill="#2b4c65" stroke="#63b3ed" stroke-width="2.2" filter="url(#dropShadow)"/>
+    <text x="572.0" y="1643.1999999999998" fill="#ebf8ff" font-size="9.5" font-weight="700" text-anchor="middle">E2. HARBOR WAREHOUSE</text>
+    <text x="572.0" y="1666.0" fill="#bee3f8" font-size="8" text-anchor="middle">16m × 8m | Cart &amp; Ore Unloading</text>
+    <rect x="572.0" y="1696.0" width="48.0" height="336.0" fill="#2d3748" stroke="#a0aec0" stroke-width="2"/>
+    <rect x="572.0" y="1984.0" width="432.0" height="48.0" fill="#2d3748" stroke="#a0aec0" stroke-width="2"/>
+    <rect x="956.0" y="1984.0" width="48.0" height="48.0" fill="#744210" stroke="#f6e05e" stroke-width="2.5"/>
+    <circle cx="980.0" cy="2008.0" r="9" fill="#f6ad55" stroke="#fffaf0" stroke-width="1.5"/>
+    <text x="764.0" y="2011.6000000000001" fill="#e2e8f0" font-size="8.5" font-weight="700" text-anchor="middle">E3. BLACK MARBLE BREAKWATER (Z = +1.0m) &amp; BEACON</text>
+    <path d="M 716.0 1840.0 Q 812.0 1786.0, 908.0 1786.0 Q 1004.0 1786.0, 1100.0 1840.0 Q 1004.0 1894.0, 908.0 1894.0 Q 812.0 1894.0, 716.0 1840.0 Z" fill="#1a365d" fill-opacity="0.5" stroke="#63b3ed" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <path d="M 776.0 1840.0 Q 836.0 1804.0, 908.0 1804.0 Q 980.0 1804.0, 1040.0 1840.0 Q 980.0 1876.0, 908.0 1876.0 Q 836.0 1876.0, 776.0 1840.0 Z" fill="#744210" stroke="#f6ad55" stroke-width="2.2"/>
+    <circle cx="908.0" cy="1840.0" r="6" fill="#ecc94b"/>
+    <text x="908.0" y="1835.1999999999998" fill="#fffaf0" font-size="9" font-weight="700" text-anchor="middle">MAIN SHIP BERTH (Longship 22×6m / Drakkar 32m)</text>
+    <text x="908.0" y="1930.0" fill="#90cdf4" font-size="9.5" font-weight="700" text-anchor="middle">ZONE E: SHELTERED HARBOR BASIN (36m × 20m, Seabed Z = -4.5m)</text>
+    <rect x="236.0" y="304.0" width="24.0" height="1296.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="236.0" y="304.0" width="576.0" height="24.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="1004.0" y="304.0" width="768.0" height="24.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="1748.0" y="304.0" width="24.0" height="576.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="1748.0" y="976.0" width="24.0" height="624.0" fill="#4a5568" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="812.0" y="280.0" width="48.0" height="120.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.5" filter="url(#dropShadow)"/>
+    <rect x="956.0" y="280.0" width="48.0" height="120.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.5" filter="url(#dropShadow)"/>
+    <rect x="860.0" y="304.0" width="96.0" height="72.0" fill="#4a5568" fill-opacity="0.7" stroke="#f6e05e" stroke-width="2"/>
+    <text x="908.0" y="343.0" fill="#fefcbf" font-size="9" font-weight="800" text-anchor="middle">D1. NORTH GATEHOUSE</text>
+    <rect x="1724.0" y="880.0" width="48.0" height="96.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2"/>
+    <text x="1700.0" y="931.0" fill="#fbd38d" font-size="8.5" font-weight="700" text-anchor="end">D2. East Postern Gate</text>
+    <rect x="236.0" y="1600.0" width="96.0" height="96.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.2" filter="url(#dropShadow)"/>
+    <rect x="1676.0" y="1600.0" width="96.0" height="96.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.2" filter="url(#dropShadow)"/>
+    <rect x="236.0" y="304.0" width="72.0" height="96.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.2" filter="url(#dropShadow)"/>
+    <rect x="1700.0" y="304.0" width="72.0" height="96.0" fill="#2d3748" stroke="#f6ad55" stroke-width="2.2" filter="url(#dropShadow)"/>
+  </g>
+  <g id="layer-dimensions">
+    <circle cx="764.0" cy="1168.0" r="7" fill="#fc8181" stroke="#ffffff" stroke-width="2"/>
+    <line x1="764.0" y1="1168.0" x2="836.0" y2="1168.0" stroke="#fc8181" stroke-width="3" marker-end="url(#axisArrow)"/>
+    <line x1="764.0" y1="1168.0" x2="764.0" y2="1096.0" stroke="#fc8181" stroke-width="3" marker-end="url(#axisArrow)"/>
+    <rect x="639.0" y="1176.0" width="130" height="22" rx="3" fill="#742a2a" stroke="#fc8181" stroke-width="1.2"/>
+    <text x="704.0" y="1191.0" fill="#fff5f5" font-size="9.5" font-weight="800" text-anchor="middle">ORIGIN (0, 0, +4m)</text>
+    <line x1="236.0" y1="212.0" x2="236.0" y2="228.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1772.0" y1="212.0" x2="1772.0" y2="228.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="238.0" y1="220.0" x2="1770.0" y2="220.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <rect x="735.2" y="210.0" width="537.6" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+    <text x="1004.0" y="223.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">OVERALL SETTLEMENT WIDTH: 128.0 m (32 × 4m Grausten Tiles) [X = -44m to +84m]</text>
+    <line x1="764.0" y1="838.4000000000001" x2="764.0" y2="854.4000000000001" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1052.0" y1="838.4000000000001" x2="1052.0" y2="854.4000000000001" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="766.0" y1="846.4000000000001" x2="1050.0" y2="846.4000000000001" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <rect x="805.8" y="836.4000000000001" width="204.4" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+    <text x="908.0" y="849.9000000000001" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Dreamhouse: 24.0 m (6 Tiles)</text>
+    <line x1="524.0" y1="838.4000000000001" x2="524.0" y2="854.4000000000001" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="716.0" y1="838.4000000000001" x2="716.0" y2="854.4000000000001" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="526.0" y1="846.4000000000001" x2="714.0" y2="846.4000000000001" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <rect x="545.0" y="836.4000000000001" width="150.0" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+    <text x="620.0" y="849.9000000000001" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Resting Hall: 16.0 m</text>
+    <line x1="716.0" y1="1282.4" x2="716.0" y2="1298.4" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1148.0" y1="1282.4" x2="1148.0" y2="1298.4" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="718.0" y1="1290.4" x2="1146.0" y2="1290.4" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <rect x="761.8" y="1280.4" width="340.4" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+    <text x="932.0" y="1293.9" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Elevated Plaza: 36.0 m (9 Tiles) [X = -4m..+32m]</text>
+    <line x1="1244.0" y1="1570.4" x2="1244.0" y2="1586.4" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1676.0" y1="1570.4" x2="1676.0" y2="1586.4" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1246.0" y1="1578.4" x2="1674.0" y2="1578.4" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <rect x="1293.2" y="1568.4" width="333.59999999999997" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+    <text x="1460.0" y="1581.9" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Agriculture & Husbandry Width: 36.0 m (9 Tiles)</text>
+    <line x1="668.0" y1="2060.0" x2="668.0" y2="2076.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1100.0" y1="2060.0" x2="1100.0" y2="2076.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="670.0" y1="2068.0" x2="1098.0" y2="2068.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <rect x="679.8" y="2058.0" width="408.4" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+    <text x="884.0" y="2071.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Harbor Basin & Main Quay: 36.0 m (9 Tiles) [X = -8m..+28m]</text>
+    <line x1="162.0" y1="1696.0" x2="178.0" y2="1696.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="162.0" y1="304.0" x2="178.0" y2="304.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="170.0" y1="1694.0" x2="170.0" y2="306.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <g transform="translate(170.0,1000.0) rotate(-90)">
+      <rect x="-170.2" y="-10" width="340.4" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+      <text x="0" y="3.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">WALLED LAND ENVELOPE: 116.0 m [Y = -44m to +72m]</text>
+    </g>
+    <line x1="162.0" y1="2032.0" x2="178.0" y2="2032.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="162.0" y1="1696.0" x2="178.0" y2="1696.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="170.0" y1="2030.0" x2="170.0" y2="1698.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <g transform="translate(170.0,1864.0) rotate(-90)">
+      <rect x="-71.6" y="-10" width="143.2" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+      <text x="0" y="3.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">HARBOR ZONE: 28.0 m</text>
+    </g>
+    <line x1="1070.4" y1="1168.0" x2="1086.4" y2="1168.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1070.4" y1="880.0" x2="1086.4" y2="880.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1078.4" y1="1166.0" x2="1078.4" y2="882.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <g transform="translate(1078.4,1024.0) rotate(-90)">
+      <rect x="-68.19999999999999" y="-10" width="136.39999999999998" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+      <text x="0" y="3.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Dreamhouse: 24.0 m</text>
+    </g>
+    <line x1="1118.4" y1="1264.0" x2="1134.4" y2="1264.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1118.4" y1="832.0" x2="1134.4" y2="832.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1126.4" y1="1262.0" x2="1126.4" y2="834.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <g transform="translate(1126.4,1048.0) rotate(-90)">
+      <rect x="-132.8" y="-10" width="265.6" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+      <text x="0" y="3.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Elevated Plaza: 36.0 m [Y = -8..+28m]</text>
+    </g>
+    <line x1="1704.0" y1="1552.0" x2="1720.0" y2="1552.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1704.0" y1="976.0" x2="1720.0" y2="976.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1712.0" y1="1550.0" x2="1712.0" y2="978.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <g transform="translate(1712.0,1264.0) rotate(-90)">
+      <rect x="-102.2" y="-10" width="204.4" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+      <text x="0" y="3.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Agriculture Compound: 48.0 m</text>
+    </g>
+    <line x1="1704.0" y1="880.0" x2="1720.0" y2="880.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1704.0" y1="496.0" x2="1720.0" y2="496.0" stroke="#f6e05e" stroke-width="1.5"/>
+    <line x1="1712.0" y1="878.0" x2="1712.0" y2="498.0" stroke="#f6e05e" stroke-width="1.8" marker-start="url(#dimArrowStart)" marker-end="url(#dimArrowEnd)"/>
+    <g transform="translate(1712.0,688.0) rotate(-90)">
+      <rect x="-88.6" y="-10" width="177.2" height="19" rx="3" fill="#0f141c" stroke="#f6e05e" stroke-width="1"/>
+      <text x="0" y="3.5" fill="#fefcbf" font-size="9.5" font-weight="700" text-anchor="middle">Animal Husbandry: 32.0 m</text>
+    </g>
+  </g>
+
+  <g id="layer-legend">
+    <rect x="1940" y="160" width="648" height="1968" rx="8" fill="#161f2c" stroke="#4a5568" stroke-width="2"/>
+
+    <!-- North Arrow & Scale Bar Box -->
+    <rect x="1960" y="180" width="608" height="135" rx="6" fill="#1e293b" stroke="#63b3ed" stroke-width="1.5"/>
+    <g transform="translate(2015, 245)">
+      <circle cx="0" cy="0" r="38" fill="#0f141c" stroke="#90cdf4" stroke-width="1.5"/>
+      <polygon points="0,-34 -9,0 0,-8 9,0" fill="#fc8181"/>
+      <polygon points="0,34 -9,0 0,8 9,0" fill="#cbd5e0"/>
+      <polygon points="-34,0 0,-7 -8,0 0,7" fill="#cbd5e0"/>
+      <polygon points="34,0 0,-7 8,0 0,7" fill="#cbd5e0"/>
+      <text x="0" y="-42" fill="#fc8181" font-size="13" font-weight="800" text-anchor="middle">N (+Y)</text>
+      <text x="0" y="52" fill="#90cdf4" font-size="11" font-weight="700" text-anchor="middle">S (-Y SEA)</text>
+      <text x="-50" y="4" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">W</text>
+      <text x="50" y="4" fill="#cbd5e0" font-size="10" font-weight="700" text-anchor="middle">E</text>
+    </g>
+    <text x="2100" y="208" fill="#f7fafc" font-size="14" font-weight="800">GRAPHIC SCALE (4m GRAUSTEN MODULE)</text>
+    <text x="2100" y="228" fill="#a0aec0" font-size="11.5">1 Grid Cell = 4.0 m × 4.0 m (1 Grausten Floor 4×4 Tile)</text>
+    <g transform="translate(2100, 242)">
+      <rect x="0" y="0" width="48.0" height="14" fill="#ecc94b" stroke="#f7fafc" stroke-width="1"/>
+      <rect x="48.0" y="0" width="48.0" height="14" fill="#2d3748" stroke="#f7fafc" stroke-width="1"/>
+      <rect x="96.0" y="0" width="48.0" height="14" fill="#ecc94b" stroke="#f7fafc" stroke-width="1"/>
+      <rect x="144.0" y="0" width="48.0" height="14" fill="#2d3748" stroke="#f7fafc" stroke-width="1"/>
+      <rect x="192.0" y="0" width="96.0" height="14" fill="#ecc94b" stroke="#f7fafc" stroke-width="1"/>
+      <text x="0" y="30" fill="#e2e8f0" font-size="11" font-weight="700" text-anchor="middle">0m</text>
+      <text x="48.0" y="30" fill="#e2e8f0" font-size="11" font-weight="700" text-anchor="middle">4m</text>
+      <text x="96.0" y="30" fill="#e2e8f0" font-size="11" font-weight="700" text-anchor="middle">8m</text>
+      <text x="144.0" y="30" fill="#e2e8f0" font-size="11" font-weight="700" text-anchor="middle">12m</text>
+      <text x="192.0" y="30" fill="#e2e8f0" font-size="11" font-weight="700" text-anchor="middle">16m</text>
+      <text x="288.0" y="30" fill="#ecc94b" font-size="11" font-weight="800" text-anchor="middle">24m (6 Tiles)</text>
+    </g>
+
+    <!-- Elevation & Datum Hierarchy Box -->
+    <text x="1964" y="350" fill="#ecc94b" font-size="16" font-weight="800" letter-spacing="0.5">1. FIXED THREE-LEVEL ELEVATION HIERARCHY (Z-AXIS)</text>
+    <rect x="1960" y="362" width="608" height="185" rx="6" fill="#1e293b" stroke="#4a5568" stroke-width="1.2"/>
+    <g transform="translate(1975, 386)" font-size="12.5" fill="#e2e8f0">
+      <rect x="0" y="-12" width="22" height="16" fill="#4a192c" stroke="#f687b3" stroke-width="2"/>
+      <text x="34" y="0" font-weight="700" fill="#fed7e2">Z = +4.0 m : Dreamhouse Main Floor &amp; Resting Hall</text>
+      <text x="34" y="18" font-size="11" fill="#cbd5e0">24×24m House + 4m Skybridge + 16×16m Resting Hall (4m Basement below)</text>
+
+      <rect x="0" y="34" width="22" height="16" fill="#2b3340" stroke="#ecc94b" stroke-width="2"/>
+      <text x="34" y="46" font-weight="700" fill="#fefcbf">Z = +2.0 m : First Outdoor Elevated Plaza &amp; Spa Court</text>
+      <text x="34" y="64" font-size="11" fill="#cbd5e0">36×36m Fixed Plaza (X: -4..32m, Y: -8..28m) + West Hot Tub Terrace</text>
+
+      <rect x="0" y="80" width="22" height="16" fill="#2d3748" stroke="#90cdf4" stroke-width="1.5"/>
+      <text x="34" y="92" font-weight="700" fill="#bee3f8">Z = 0.0 m : Primary Ground Datum, Avenues, Quay &amp; Farms</text>
+      <text x="34" y="110" font-size="11" fill="#cbd5e0">King's Way Avenue, 8m Ring Road, Harbor Quay, Agriculture &amp; Husbandry</text>
+
+      <rect x="0" y="126" width="22" height="16" fill="#081a29" stroke="#4299e1" stroke-width="1.5"/>
+      <text x="34" y="138" font-weight="700" fill="#90cdf4">Z = -1.5 m Waterline  |  Z = -2.0 m Lox Pit  |  Z = -4.5 m Basin</text>
+      <text x="34" y="154" font-size="11" fill="#cbd5e0">1.5m Quay Freeboard; 3.0m Clear Water Draft for Longship / Drakkar</text>
+    </g>
+
+    <!-- Zone & Building Legend -->
+    <text x="1964" y="585" fill="#ecc94b" font-size="16" font-weight="800" letter-spacing="0.5">2. FUNCTIONAL ZONES &amp; COORDINATE SCHEDULE</text>
+    <rect x="1960" y="598" width="608" height="520" rx="6" fill="#1e293b" stroke="#4a5568" stroke-width="1.2"/>
+
+    <text x="1970" y="628" fill="#a0aec0" font-size="11" font-weight="700">ID</text>
+    <text x="2012" y="628" fill="#a0aec0" font-size="11" font-weight="700">ZONE / BUILDING NAME</text>
+    <text x="2218" y="628" fill="#a0aec0" font-size="11" font-weight="700">SIZE</text>
+    <text x="2305" y="628" fill="#a0aec0" font-size="11" font-weight="700">COORDINATES (m)</text>
+    <text x="2475" y="628" fill="#a0aec0" font-size="11" font-weight="700">ELEV</text>
+    <line x1="1968" y1="636" x2="2560" y2="636" stroke="#4a5568" stroke-width="1"/>
+    <text x="1970" y="656" fill="#f687b3" font-size="11" font-weight="800">A1</text>
+    <text x="2012" y="656" fill="#f7fafc" font-size="11" font-weight="600">Existing Dreamhouse (Fixed)</text>
+    <text x="2218" y="656" fill="#cbd5e0" font-size="10.5">24 × 24 m</text>
+    <text x="2305" y="656" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 0..24, Y: 0..24</text>
+    <text x="2475" y="656" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +4.0 m</text>
+    <rect x="1966" y="667" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="682" fill="#ecc94b" font-size="11" font-weight="800">A2</text>
+    <text x="2012" y="682" fill="#f7fafc" font-size="11" font-weight="600">First Elevated Plaza (Fixed)</text>
+    <text x="2218" y="682" fill="#cbd5e0" font-size="10.5">36 × 36 m</text>
+    <text x="2305" y="682" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -4..32, Y: -8..28</text>
+    <text x="2475" y="682" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +2.0 m</text>
+    <text x="1970" y="708" fill="#d6bcfa" font-size="11" font-weight="800">A3</text>
+    <text x="2012" y="708" fill="#f7fafc" font-size="11" font-weight="600">Resting & Comfort Hall + Bridge</text>
+    <text x="2218" y="708" fill="#cbd5e0" font-size="10.5">16 × 16 m</text>
+    <text x="2305" y="708" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -20..-4, Y: 8..24</text>
+    <text x="2475" y="708" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +4.0 m</text>
+    <rect x="1966" y="719" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="734" fill="#90cdf4" font-size="11" font-weight="800">A4</text>
+    <text x="2012" y="734" fill="#f7fafc" font-size="11" font-weight="600">Hot Tub & Maypole Spa Cloister</text>
+    <text x="2218" y="734" fill="#cbd5e0" font-size="10.5">20 × 8 m</text>
+    <text x="2305" y="734" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -24..-4, Y: 0..8</text>
+    <text x="2475" y="734" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +2.0 m</text>
+    <text x="1970" y="760" fill="#68d391" font-size="11" font-weight="800">B1-4</text>
+    <text x="2012" y="760" fill="#f7fafc" font-size="11" font-weight="600">4× Open-Sky Crop & Orchard Plots</text>
+    <text x="2218" y="760" fill="#cbd5e0" font-size="10.5">4× (12×12 m)</text>
+    <text x="2305" y="760" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 44..72, Y: -28..0</text>
+    <text x="2475" y="760" fill="#fefcbf" font-size="10.5" font-weight="700">Z = -0.15 m</text>
+    <rect x="1966" y="771" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="786" fill="#9ae6b4" font-size="11" font-weight="800">B5</text>
+    <text x="2012" y="786" fill="#f7fafc" font-size="11" font-weight="600">Granary, Seed Store & Windmill</text>
+    <text x="2218" y="786" fill="#cbd5e0" font-size="10.5">28 × 8 m</text>
+    <text x="2305" y="786" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 44..72, Y: 4..12</text>
+    <text x="2475" y="786" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0.0 m</text>
+    <text x="1970" y="812" fill="#48bb78" font-size="11" font-weight="800">B6</text>
+    <text x="2012" y="812" fill="#f7fafc" font-size="11" font-weight="600">Ashvine (Vineberry) Trellis Wall</text>
+    <text x="2218" y="812" fill="#cbd5e0" font-size="10.5">2 × 32 m</text>
+    <text x="2305" y="812" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 74..76, Y: -28..4</text>
+    <text x="2475" y="812" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0..+6m</text>
+    <rect x="1966" y="823" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="838" fill="#fbd38d" font-size="11" font-weight="800">C1</text>
+    <text x="2012" y="838" fill="#f7fafc" font-size="11" font-weight="600">Boar & Hen Roofed Breeding Barn</text>
+    <text x="2218" y="838" fill="#cbd5e0" font-size="10.5">12 × 16 m</text>
+    <text x="2305" y="838" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 44..56, Y: 28..44</text>
+    <text x="2475" y="838" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0.0 m</text>
+    <text x="1970" y="864" fill="#ed8936" font-size="11" font-weight="800">C2</text>
+    <text x="2012" y="864" fill="#f7fafc" font-size="11" font-weight="600">Sunken Lox / Asksvin Paddock</text>
+    <text x="2218" y="864" fill="#cbd5e0" font-size="10.5">12 × 24 m</text>
+    <text x="2305" y="864" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 60..72, Y: 28..52</text>
+    <text x="2475" y="864" fill="#fefcbf" font-size="10.5" font-weight="700">Z = -2.0 m</text>
+    <rect x="1966" y="875" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="890" fill="#f6ad55" font-size="11" font-weight="800">C3</text>
+    <text x="2012" y="890" fill="#f7fafc" font-size="11" font-weight="600">Saddle, Feed & Butcher Barn</text>
+    <text x="2218" y="890" fill="#cbd5e0" font-size="10.5">12 × 6 m</text>
+    <text x="2305" y="890" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 44..56, Y: 46..52</text>
+    <text x="2475" y="890" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0.0 m</text>
+    <text x="1970" y="916" fill="#fc8181" font-size="11" font-weight="800">D1</text>
+    <text x="2012" y="916" fill="#f7fafc" font-size="11" font-weight="600">North Barbican Gatehouse</text>
+    <text x="2218" y="916" fill="#cbd5e0" font-size="10.5">16 × 10 m</text>
+    <text x="2305" y="916" fill="#90cdf4" font-size="10.5" font-family="monospace">X: 4..20, Y: 64..74</text>
+    <text x="2475" y="916" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0..+12m</text>
+    <rect x="1966" y="927" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="942" fill="#a0aec0" font-size="11" font-weight="800">D2</text>
+    <text x="2012" y="942" fill="#f7fafc" font-size="11" font-weight="600">Perimeter Wall & 4m Dry Moat</text>
+    <text x="2218" y="942" fill="#cbd5e0" font-size="10.5">128 × 116 m</text>
+    <text x="2305" y="942" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -44..84, Y: -44..72</text>
+    <text x="2475" y="942" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +3/-2.5m</text>
+    <text x="1970" y="968" fill="#cbd5e0" font-size="11" font-weight="800">D3</text>
+    <text x="2012" y="968" fill="#f7fafc" font-size="11" font-weight="600">Coastal & Corner Watchtowers (4×)</text>
+    <text x="2218" y="968" fill="#cbd5e0" font-size="10.5">8 × 8 m</text>
+    <text x="2305" y="968" fill="#90cdf4" font-size="10.5" font-family="monospace">SW, SE, NW, NE Corners</text>
+    <text x="2475" y="968" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +10.0 m</text>
+    <rect x="1966" y="979" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="994" fill="#ecc94b" font-size="11" font-weight="800">E1</text>
+    <text x="2012" y="994" fill="#f7fafc" font-size="11" font-weight="600">Main Ship Quay & Stepped Gangway</text>
+    <text x="2218" y="994" fill="#cbd5e0" font-size="10.5">36 × 4 m</text>
+    <text x="2305" y="994" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -8..28, Y: -48..-44</text>
+    <text x="2475" y="994" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0/-0.5m</text>
+    <text x="1970" y="1020" fill="#63b3ed" font-size="11" font-weight="800">E2</text>
+    <text x="2012" y="1020" fill="#f7fafc" font-size="11" font-weight="600">Harbor Master Warehouse & Shed</text>
+    <text x="2218" y="1020" fill="#cbd5e0" font-size="10.5">16 × 8 m</text>
+    <text x="2305" y="1020" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -24..-8, Y: -44..-36</text>
+    <text x="2475" y="1020" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0.0 m</text>
+    <rect x="1966" y="1031" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="1046" fill="#90cdf4" font-size="11" font-weight="800">E3</text>
+    <text x="2012" y="1046" fill="#f7fafc" font-size="11" font-weight="600">Breakwater Mole & Beacon Tower</text>
+    <text x="2218" y="1046" fill="#cbd5e0" font-size="10.5">36 × 4 m</text>
+    <text x="2305" y="1046" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -16..20, Y: -72..-68</text>
+    <text x="2475" y="1046" fill="#fefcbf" font-size="10.5" font-weight="700">Z = +1..+12m</text>
+    <text x="1970" y="1072" fill="#81e6d9" font-size="11" font-weight="800">F1</text>
+    <text x="2012" y="1072" fill="#f7fafc" font-size="11" font-weight="600">Stone Portal Arch Colonnade (6×)</text>
+    <text x="2218" y="1072" fill="#cbd5e0" font-size="10.5">20 × 10 m</text>
+    <text x="2305" y="1072" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -28..-8, Y: 38..48</text>
+    <text x="2475" y="1072" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0.0 m</text>
+    <rect x="1966" y="1083" width="596" height="24" fill="#161f2c" fill-opacity="0.55"/>
+    <text x="1970" y="1098" fill="#4fd1c5" font-size="11" font-weight="800">F2-3</text>
+    <text x="2012" y="1098" fill="#f7fafc" font-size="11" font-weight="600">Obliterator Court & Sea Obelisk</text>
+    <text x="2218" y="1098" fill="#cbd5e0" font-size="10.5">10×10 / 4×4m</text>
+    <text x="2305" y="1098" fill="#90cdf4" font-size="10.5" font-family="monospace">X: -32..-22 / X: 10..14</text>
+    <text x="2475" y="1098" fill="#fefcbf" font-size="10.5" font-weight="700">Z = 0.0 m</text>
+
+    <text x="1964" y="1145" fill="#ecc94b" font-size="16" font-weight="800" letter-spacing="0.5">3. MATERIAL PALETTE &amp; VERIFIED VALHEIM MECHANICS</text>
+    <rect x="1960" y="1157" width="608" height="963" rx="6" fill="#1e293b" stroke="#4a5568" stroke-width="1.2"/>
+    <g transform="translate(1975, 1185)" font-size="11.5" fill="#e2e8f0">
+      <text x="0" y="0" font-weight="700" fill="#f6ad55">• Primary Paving &amp; Module Grid (Grausten Floor 4×4m):</text>
+      <text x="14" y="18" fill="#cbd5e0">Verified 4×4×0.5m Ashstone tier (Support 100–2000, rain-immune). All major zones,</text>
+      <text x="14" y="34" fill="#cbd5e0">plazas, and 8m avenues snap to integer multiples of 4.0m from Origin (0,0).</text>
+
+      <text x="0" y="60" font-weight="700" fill="#f6ad55">• Primary Structural &amp; Facade Identity (Darkwood + Black Marble):</text>
+      <text x="14" y="78" fill="#cbd5e0">Black Marble plinths, retaining walls (+2m Plaza, +4m House basement) &amp; quay coping</text>
+      <text x="14" y="94" fill="#cbd5e0">paired with Darkwood 2m/4m beams, arches, carved dividers, and tarred Shingle Roofs.</text>
+      <text x="14" y="110" fill="#cbd5e0">(Note: Vanilla Darkwood has no solid wall tiles; infill uses Black Marble / Ashwood).</text>
+
+      <text x="0" y="136" font-weight="700" fill="#f6ad55">• Open-Sky Agriculture &amp; Raid-Safe Husbandry:</text>
+      <text x="14" y="154" fill="#cbd5e0">4× 12×12m soil beds leave raw cultivated earth with zero roof overhang (1.0m crop</text>
+      <text x="14" y="170" fill="#cbd5e0">spacing; 3.6m Vineberry spacing along East wall). Lox/Asksvin pit uses indestructible</text>
+      <text x="14" y="186" fill="#cbd5e0">earth-core retaining walls at Z = -2.0m within 64m active breeding range of House.</text>
+    </g>
+  </g>
+</svg>
