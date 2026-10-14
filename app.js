@@ -12,6 +12,11 @@ function switchTab(tabId, btn) {
   if (target) target.classList.add("active");
   if (btn) btn.classList.add("active");
 
+  // On mobile screens, auto-close sidebar when switching tabs
+  if (window.innerWidth <= 768) {
+    toggleSidebar(false);
+  }
+
   // Show/hide floating HUD on plan & sections tabs
   const hud = document.getElementById("viewport-hud");
   const hint = document.getElementById("hud-hint");
@@ -31,19 +36,46 @@ function switchTab(tabId, btn) {
   }
 }
 
-// Sidebar Toggle
-function toggleSidebar() {
+// Sidebar Toggle with mobile drawer & backdrop support
+function toggleSidebar(forceState) {
   const sidebar = document.querySelector(".sidebar");
+  const backdrop = document.getElementById("sidebar-backdrop");
   const btn = document.getElementById("sidebar-toggle-btn");
-  sidebar.classList.toggle("collapsed");
+  if (!sidebar) return;
+
+  const isCurrentlyCollapsed = sidebar.classList.contains("collapsed");
+  const shouldOpen =
+    forceState !== undefined ? forceState : isCurrentlyCollapsed;
+
+  sidebar.classList.toggle("collapsed", !shouldOpen);
   if (btn) {
-    btn.classList.toggle("active", !sidebar.classList.contains("collapsed"));
+    btn.classList.toggle("active", shouldOpen);
+  }
+  if (backdrop) {
+    backdrop.classList.toggle(
+      "visible",
+      shouldOpen && window.innerWidth <= 768,
+    );
   }
   if (activeTabId === "tab-3d") {
     requestAnimationFrame(() => {
       resize3D();
       draw3D();
     });
+  }
+}
+
+// 3D HUD Toggle for mobile screens
+function toggle3DHud(forceOpen) {
+  const hud = document.getElementById("hud-3d");
+  const btn = document.getElementById("hud-3d-toggle-btn");
+  if (!hud) return;
+  const isCurrentlyCollapsed = hud.classList.contains("collapsed");
+  const shouldOpen =
+    forceOpen !== undefined ? forceOpen : isCurrentlyCollapsed;
+  hud.classList.toggle("collapsed", !shouldOpen);
+  if (btn) {
+    btn.textContent = shouldOpen ? "−" : "+";
   }
 }
 
@@ -152,6 +184,7 @@ class SvgPanZoom {
   initEvents() {
     if (!this.viewport || !this.svg) return;
 
+    // Mouse Controls
     this.viewport.addEventListener("mousedown", (e) => {
       if (e.button !== 0) return;
       if (this.currentZoom <= 1.02) return;
@@ -207,6 +240,133 @@ class SvgPanZoom {
 
     this.viewport.addEventListener("dblclick", () => {
       this.fitView();
+    });
+
+    // Touch Controls for Mobile & Tablets (1-finger pan, 2-finger pinch zoom, double-tap zoom/fit)
+    let touchStartDist = 0;
+    let initialPinchZoom = 1.0;
+    let pinchCenter = { x: 0, y: 0 };
+    let lastTapTime = 0;
+    let lastTapPos = { x: 0, y: 0 };
+
+    this.viewport.addEventListener(
+      "touchstart",
+      (e) => {
+        if (e.touches.length === 1) {
+          const t = e.touches[0];
+          const now = Date.now();
+          const distFromLastTap = Math.hypot(
+            t.clientX - lastTapPos.x,
+            t.clientY - lastTapPos.y,
+          );
+          if (now - lastTapTime < 320 && distFromLastTap < 30) {
+            e.preventDefault();
+            if (this.currentZoom > 1.2) {
+              this.fitView();
+            } else {
+              this.zoom(2.0, false, t.clientX, t.clientY);
+            }
+            lastTapTime = 0;
+            return;
+          }
+          lastTapTime = now;
+          lastTapPos = { x: t.clientX, y: t.clientY };
+
+          this.isDragging = true;
+          this.dragMoved = false;
+          this.dragStartX = t.clientX;
+          this.dragStartY = t.clientY;
+          this.initialVx = this.vx;
+          this.initialVy = this.vy;
+        } else if (e.touches.length === 2) {
+          e.preventDefault();
+          this.isDragging = false;
+          const t1 = e.touches[0];
+          const t2 = e.touches[1];
+          touchStartDist = Math.hypot(
+            t1.clientX - t2.clientX,
+            t1.clientY - t2.clientY,
+          );
+          initialPinchZoom = this.currentZoom;
+          pinchCenter = {
+            x: (t1.clientX + t2.clientX) / 2,
+            y: (t1.clientY + t2.clientY) / 2,
+          };
+        }
+      },
+      { passive: false },
+    );
+
+    window.addEventListener(
+      "touchmove",
+      (e) => {
+        const isCurrentActive =
+          (activeTabId === "tab-plan" &&
+            this.viewport.id === "viewport-plan") ||
+          (activeTabId === "tab-sections" &&
+            this.viewport.id === "viewport-sections");
+        if (!isCurrentActive) return;
+
+        if (e.touches.length === 1 && this.isDragging) {
+          const t = e.touches[0];
+          const dx = t.clientX - this.dragStartX;
+          const dy = t.clientY - this.dragStartY;
+          if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+            this.dragMoved = true;
+          }
+          if (this.currentZoom > 1.01) {
+            e.preventDefault();
+            const rect = this.svg.getBoundingClientRect();
+            if (rect.width > 0 && rect.height > 0) {
+              const svgDx = dx * (this.vw / rect.width);
+              const svgDy = dy * (this.vh / rect.height);
+              this.vx = this.initialVx - svgDx;
+              this.vy = this.initialVy - svgDy;
+              this.applyViewBox();
+            }
+          }
+        } else if (e.touches.length === 2 && touchStartDist > 0) {
+          e.preventDefault();
+          const t1 = e.touches[0];
+          const t2 = e.touches[1];
+          const curDist = Math.hypot(
+            t1.clientX - t2.clientX,
+            t1.clientY - t2.clientY,
+          );
+          if (curDist > 10) {
+            const scale = curDist / touchStartDist;
+            const targetZoom = Math.max(
+              1.0,
+              Math.min(10.0, initialPinchZoom * scale),
+            );
+            const factor = targetZoom / this.currentZoom;
+            if (Math.abs(factor - 1.0) > 0.005) {
+              this.zoom(factor, false, pinchCenter.x, pinchCenter.y);
+            }
+          }
+        }
+      },
+      { passive: false },
+    );
+
+    window.addEventListener("touchend", (e) => {
+      if (e.touches.length === 0) {
+        this.isDragging = false;
+        touchStartDist = 0;
+      } else if (e.touches.length === 1) {
+        const t = e.touches[0];
+        this.isDragging = true;
+        this.dragStartX = t.clientX;
+        this.dragStartY = t.clientY;
+        this.initialVx = this.vx;
+        this.initialVy = this.vy;
+        touchStartDist = 0;
+      }
+    });
+
+    window.addEventListener("touchcancel", () => {
+      this.isDragging = false;
+      touchStartDist = 0;
     });
   }
 }
@@ -286,12 +446,12 @@ function resolveZone(xm, ym) {
 function initPlanProbe(svgEl) {
   if (!svgEl) return;
   const coordBox = document.getElementById("coord-box");
-  svgEl.addEventListener("mousemove", (e) => {
-    if (planController && planController.isDragging) return;
+
+  const updateProbeAt = (clientX, clientY) => {
     try {
       const pt = svgEl.createSVGPoint();
-      pt.x = e.clientX;
-      pt.y = e.clientY;
+      pt.x = clientX;
+      pt.y = clientY;
       const svgP = pt.matrixTransform(svgEl.getScreenCTM().inverse());
       const xm = (svgP.x - MARGIN_LEFT) / SCALE + X_MIN;
       const ym = Y_MAX - (svgP.y - MARGIN_TOP) / SCALE;
@@ -309,7 +469,35 @@ function initPlanProbe(svgEl) {
         }
       }
     } catch (err) {}
+  };
+
+  svgEl.addEventListener("mousemove", (e) => {
+    if (planController && planController.isDragging) return;
+    updateProbeAt(e.clientX, e.clientY);
   });
+
+  svgEl.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length === 1) {
+        updateProbeAt(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    },
+    { passive: true },
+  );
+
+  svgEl.addEventListener(
+    "touchmove",
+    (e) => {
+      if (
+        e.touches.length === 1 &&
+        (!planController || !planController.dragMoved)
+      ) {
+        updateProbeAt(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    },
+    { passive: true },
+  );
 }
 
 // Asynchronously load and mount external SVG files
@@ -390,6 +578,26 @@ async function initApp() {
   planController = pCtrl;
   sectionsController = sCtrl;
   updateHUD();
+
+  // Mobile setup: Update hint for touch screens
+  const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  if (isTouchDevice) {
+    const hint = document.getElementById("hud-hint");
+    if (hint) {
+      hint.textContent =
+        "Chạm & vuốt để di chuyển • Chụm 2 ngón thu phóng • Chạm 2 lần để về 1 màn";
+    }
+  }
+
+  // On mobile, collapse sidebar and 3D HUD by default so user gets a full-screen view
+  if (window.innerWidth <= 768) {
+    const sidebar = document.querySelector(".sidebar");
+    const sideBtn = document.getElementById("sidebar-toggle-btn");
+    if (sidebar) sidebar.classList.add("collapsed");
+    if (sideBtn) sideBtn.classList.remove("active");
+    toggle3DHud(false);
+  }
 }
 
 window.addEventListener("resize", () => {
@@ -397,6 +605,24 @@ window.addEventListener("resize", () => {
     planController.fitView();
   if (sectionsController && sectionsController.currentZoom <= 1.02)
     sectionsController.fitView();
+
+  const backdrop = document.getElementById("sidebar-backdrop");
+  const sidebar = document.querySelector(".sidebar");
+  if (window.innerWidth > 768) {
+    if (backdrop) backdrop.classList.remove("visible");
+  } else {
+    if (backdrop && sidebar) {
+      backdrop.classList.toggle(
+        "visible",
+        !sidebar.classList.contains("collapsed"),
+      );
+    }
+  }
+
+  if (activeTabId === "tab-3d") {
+    resize3D();
+    draw3D();
+  }
 });
 
 // Backward-compatible zoomPlan function
@@ -808,6 +1034,90 @@ canvas.addEventListener("wheel", (e) => {
   draw3D();
 });
 
+// 3D Canvas Touch Support (1-finger orbit, 2-finger pinch-to-zoom)
+let touchMode3D = null;
+let touchStartDist3D = 0;
+let initialCamZoom3D = camZoom;
+
+canvas.addEventListener(
+  "touchstart",
+  (e) => {
+    if (e.touches.length === 1) {
+      touchMode3D = "orbit";
+      isDragging = true;
+      lastX = e.touches[0].clientX;
+      lastY = e.touches[0].clientY;
+    } else if (e.touches.length === 2) {
+      touchMode3D = "pinch";
+      isDragging = false;
+      const t1 = e.touches[0];
+      const t2 = e.touches[1];
+      touchStartDist3D = Math.hypot(
+        t1.clientX - t2.clientX,
+        t1.clientY - t2.clientY,
+      );
+      initialCamZoom3D = camZoom;
+    }
+  },
+  { passive: false },
+);
+
+window.addEventListener(
+  "touchmove",
+  (e) => {
+    if (activeTabId !== "tab-3d") return;
+    if (touchMode3D === "orbit" && e.touches.length === 1 && isDragging) {
+      e.preventDefault();
+      const curX = e.touches[0].clientX;
+      const curY = e.touches[0].clientY;
+      camYaw += (curX - lastX) * 0.008;
+      camPitch = Math.max(
+        0.15,
+        Math.min(1.35, camPitch + (curY - lastY) * 0.008),
+      );
+      lastX = curX;
+      lastY = curY;
+      draw3D();
+    } else if (
+      touchMode3D === "pinch" &&
+      e.touches.length === 2 &&
+      touchStartDist3D > 0
+    ) {
+      e.preventDefault();
+      const t1 = e.touches[0];
+      const t2 = e.touches[1];
+      const curDist = Math.hypot(
+        t1.clientX - t2.clientX,
+        t1.clientY - t2.clientY,
+      );
+      const ratio = curDist / touchStartDist3D;
+      camZoom = Math.max(2.0, Math.min(12.0, initialCamZoom3D * ratio));
+      draw3D();
+    }
+  },
+  { passive: false },
+);
+
+window.addEventListener("touchend", (e) => {
+  if (e.touches.length === 0) {
+    touchMode3D = null;
+    isDragging = false;
+    touchStartDist3D = 0;
+  } else if (e.touches.length === 1) {
+    touchMode3D = "orbit";
+    isDragging = true;
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+    touchStartDist3D = 0;
+  }
+});
+
+window.addEventListener("touchcancel", () => {
+  touchMode3D = null;
+  isDragging = false;
+  touchStartDist3D = 0;
+});
+
 // Initialize 3D view once loaded
 requestAnimationFrame(() => {
   resize3D();
@@ -817,6 +1127,7 @@ requestAnimationFrame(() => {
 // Explicitly expose functions to window for HTML onclick attributes
 window.switchTab = switchTab;
 window.toggleSidebar = toggleSidebar;
+window.toggle3DHud = toggle3DHud;
 window.toggleLayer = toggleLayer;
 window.resetActiveFit = resetActiveFit;
 window.zoomActiveTab = zoomActiveTab;

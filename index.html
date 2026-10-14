@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
     <title>
       Valheim Coastal Mega-Base — Interactive Master Plan, 3D Model &amp;
       Construction Explorer
@@ -18,9 +21,10 @@
           onclick="toggleSidebar()"
           title="Ẩn / Hiện bảng điều khiển bên trái để phóng to bản vẽ (Toggle Sidebar)"
         >
-          ☰ Bảng Điều Khiển
+          <span class="toggle-text-full">☰ Bảng Điều Khiển</span>
+          <span class="toggle-text-short">☰ Bảng</span>
         </button>
-        <div>
+        <div class="title-text-wrap">
           <h1>
             VALHEIM COASTAL MEGA-BASE — MASTER PLAN &amp; 3D EXPLORER
           </h1>
@@ -32,22 +36,43 @@
       </div>
       <div class="nav-tabs">
         <button class="tab-btn active" onclick="switchTab('tab-plan', this)">
-          1. 2D Master Site Plan (SVG)
+          <span class="tab-text-full">1. 2D Master Site Plan (SVG)</span>
+          <span class="tab-text-short">1. Site Plan</span>
         </button>
         <button class="tab-btn" onclick="switchTab('tab-sections', this)">
-          2. Vertical Sections &amp; Circulation
+          <span class="tab-text-full">2. Vertical Sections &amp; Circulation</span>
+          <span class="tab-text-short">2. Sections</span>
         </button>
         <button class="tab-btn" onclick="switchTab('tab-3d', this)">
-          3. Interactive 3D Axonometric Model
+          <span class="tab-text-full">3. Interactive 3D Axonometric Model</span>
+          <span class="tab-text-short">3. 3D Model</span>
         </button>
         <button class="tab-btn" onclick="switchTab('tab-schedule', this)">
-          4. Phased Build Schedule &amp; Inventory
+          <span class="tab-text-full">4. Phased Build Schedule &amp; Inventory</span>
+          <span class="tab-text-short">4. Schedule</span>
         </button>
       </div>
     </header>
 
+    <div
+      class="sidebar-backdrop"
+      id="sidebar-backdrop"
+      onclick="toggleSidebar(false)"
+    ></div>
+
     <div class="workspace">
       <aside class="sidebar">
+        <div class="sidebar-header-mobile">
+          <span>BẢNG ĐIỀU KHIỂN &amp; LỚP VẼ</span>
+          <button
+            class="sidebar-close-btn"
+            onclick="toggleSidebar(false)"
+            title="Đóng bảng điều khiển"
+            aria-label="Đóng"
+          >
+            ✕
+          </button>
+        </div>
         <div class="panel-card">
           <h3>Live Coordinate &amp; Grid Probe</h3>
           <div class="coord-readout" id="coord-box">
@@ -193,7 +218,7 @@
                 d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
               />
             </svg>
-            <span>Fit View (1 màn)</span>
+            <span class="hud-btn-text">Fit View (1 màn)</span>
           </button>
           <button class="hud-btn" onclick="zoomActiveTab(0.8)" title="Thu nhỏ">
             −
@@ -242,69 +267,85 @@
         <div id="tab-3d" class="tab-pane">
           <div id="canvas3d-wrap">
             <canvas id="canvas3d"></canvas>
-            <div class="hud-3d">
-              <h3
-                style="margin: 0 0 8px 0; color: var(--accent); font-size: 14px"
-              >
-                3D Coordinate Massing &amp; Elevation Explorer
-              </h3>
-              <p style="margin: 0 0 10px 0; font-size: 12px; color: #cbd5e1">
-                Drag to orbit 360° • Scroll to zoom • Built directly from the
-                exact <code>(X, Y, Z)</code> coordinate inventory.
-              </p>
-              <div
-                style="
-                  display: flex;
-                  flex-direction: column;
-                  gap: 8px;
-                  font-size: 12.5px;
-                "
-              >
-                <label
-                  >Build Stage Filter:
-                  <strong id="stage-lbl">All 9 Stages (Complete Base)</strong>
-                  <input
-                    type="range"
-                    id="stage-slider"
-                    min="1"
-                    max="9"
-                    value="9"
-                    style="width: 100%"
-                    oninput="update3DStage(this.value)"
-                  />
-                </label>
-                <label
-                  ><input
-                    type="checkbox"
-                    id="chk-roofs"
-                    checked
-                    onchange="draw3D()"
-                  />
-                  Show Building Roofs (Uncheck to inspect interiors)</label
+            <div class="hud-3d" id="hud-3d">
+              <div class="hud-3d-header">
+                <div>
+                  <h3
+                    style="margin: 0; color: var(--accent); font-size: 13.5px"
+                  >
+                    3D Massing &amp; Elevation
+                  </h3>
+                  <span class="hud-3d-subtitle">Vuốt để xoay • Chụm để phóng to</span>
+                </div>
+                <button
+                  class="hud-3d-toggle-btn"
+                  id="hud-3d-toggle-btn"
+                  onclick="toggle3DHud()"
+                  title="Ẩn / Hiện bảng điều khiển 3D"
+                  aria-label="Toggle 3D HUD"
                 >
-                <label
-                  ><input
-                    type="checkbox"
-                    id="chk-grid3d"
-                    checked
-                    onchange="draw3D()"
-                  />
-                  Show 4.0 m Grausten Grid</label
-                >
+                  −
+                </button>
               </div>
-              <div class="btn-row" style="margin-top: 10px">
-                <button class="ctrl-btn" onclick="setCamera(-0.65, 0.58, 4.2)">
-                  Seaward Aerial
-                </button>
-                <button class="ctrl-btn" onclick="setCamera(0.0, 0.25, 5.5)">
-                  South Axis Elevation
-                </button>
-                <button class="ctrl-btn" onclick="setCamera(0.75, 0.52, 4.8)">
-                  East Farm View
-                </button>
-                <button class="ctrl-btn" onclick="setCamera(-1.1, 0.48, 5.0)">
-                  West Spa &amp; Bridge
-                </button>
+              <div class="hud-3d-body" id="hud-3d-body">
+                <p style="margin: 6px 0 10px 0; font-size: 11.5px; color: #cbd5e1">
+                  Drag to orbit 360° • Scroll / Pinch to zoom • Built directly from
+                  exact <code>(X, Y, Z)</code> coordinates.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    font-size: 12px;
+                  "
+                >
+                  <label
+                    >Build Stage Filter:
+                    <strong id="stage-lbl">All 9 Stages (Complete Base)</strong>
+                    <input
+                      type="range"
+                      id="stage-slider"
+                      min="1"
+                      max="9"
+                      value="9"
+                      style="width: 100%"
+                      oninput="update3DStage(this.value)"
+                    />
+                  </label>
+                  <label
+                    ><input
+                      type="checkbox"
+                      id="chk-roofs"
+                      checked
+                      onchange="draw3D()"
+                    />
+                    Show Building Roofs</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      id="chk-grid3d"
+                      checked
+                      onchange="draw3D()"
+                    />
+                    Show 4.0 m Grausten Grid</label
+                  >
+                </div>
+                <div class="btn-row" style="margin-top: 10px">
+                  <button class="ctrl-btn" onclick="setCamera(-0.65, 0.58, 4.2)">
+                    Seaward Aerial
+                  </button>
+                  <button class="ctrl-btn" onclick="setCamera(0.0, 0.25, 5.5)">
+                    South Axis
+                  </button>
+                  <button class="ctrl-btn" onclick="setCamera(0.75, 0.52, 4.8)">
+                    East Farm
+                  </button>
+                  <button class="ctrl-btn" onclick="setCamera(-1.1, 0.48, 5.0)">
+                    West Spa
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -329,7 +370,12 @@
               Dreamhouse columns, and establish 20 m spawn suppression before
               building detailed timber structures.
             </p>
-            <table class="inv-table">
+            <div class="table-responsive-wrapper">
+              <div class="mobile-table-hint">
+                <span>↔ Vuốt sang trái / phải để xem đầy đủ 8 cột dữ liệu</span>
+              </div>
+              <div class="table-responsive">
+                <table class="inv-table">
               <thead>
                 <tr>
                   <th>Stage</th>
@@ -595,6 +641,8 @@
             </table>
           </div>
         </div>
+      </div>
+    </div>
       </main>
     </div>
 
